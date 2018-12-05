@@ -1,0 +1,215 @@
+#========================================================================================================================================================
+# [0024] Leveling Gear Filter
+#========================================================================================================================================================
+#------------------------------------------------------------------------
+# [0024-1] Hiding Rule
+#------------------------------------------------------------------------
+	Hide 
+		ItemLevel > 8
+		Class "Two Hand Maces" "Two Hand Axes" "Two Hand Swords" "Stave"
+
+#------------------------------------------------------------------------
+# [0024-2] 4 Link Gears
+#------------------------------------------------------------------------
+	Show
+		LinkedSockets = 4
+		ItemLevel <= 65
+		Rarity <= Rare
+		Class "Gloves" "Boots" "Helmets" "Body Armour"
+		SocketGroup GGG GGR
+		SetBorderColor 255 0 255 255
+		SetFontSize 40
+		PlayAlertSound 13 300
+	Show
+		LinkedSockets = 4
+		ItemLevel <= 65
+		Rarity Normal
+		Class "Gloves" "Boots" "Helmets" "Body Armour"
+		SetBorderColor 255 0 255 255
+		SetFontSize 36
+	Show
+		LinkedSockets = 4
+		ItemLevel <= 65
+		Rarity Magic		
+		Class "Gloves" "Boots" "Helmets" "Body Armour"
+		SetBorderColor 255 0 255 255
+		SetFontSize 36
+	Show
+		LinkedSockets = 4
+		ItemLevel <= 65
+		Rarity Rare
+		Class "Gloves" "Boots" "Helmets" "Body Armour"		
+		SetBorderColor 255 0 255 255
+		SetFontSize 40
+
+#------------------------------------------------------------------------
+# [0024-3] 3 Link Gears
+#------------------------------------------------------------------------
+	Show
+		LinkedSockets = 3
+		ItemLevel <= 65	
+		ItemLevel > 12
+		Rarity Rare
+		Class "Gloves" "Boots" "Helmets" "Body Armour"
+		SocketGroup GG
+		SetBorderColor 255 0 255 255
+		SetFontSize 38
+	Show
+		LinkedSockets = 3
+		ItemLevel <= 12
+		Class "Bows" "Gloves" "Boots" "Helmets" "Body Armour"
+		SocketGroup GG
+		SetBorderColor 255 0 255 255
+		SetBackgroundColor 105 34 105 255
+		SetFontSize 40
+		PlayAlertSound 13 300
+
+#------------------------------------------------------------------------
+# [0024-4] Rare Gears
+#------------------------------------------------------------------------
+	Show
+		ItemLevel <= 65	
+		ItemLevel > 12
+		Rarity Rare	
+		Class "Bow" 
+		BaseType "Short" "Royal" "Grove" "Highborn" "Thicket" "Imperial"
+		SetBorderColor 200 200 0 255
+		SetBackgroundColor 35 100 20 255          
+		SetFontSize 38
+	Show
+		ItemLevel <= 65	
+		ItemLevel > 12
+		Rarity Rare	
+		Class "Quiver" 
+		BaseType "Serrated Arrow" "Broadhead Arrow" "Penetrating Arrow" "Spike-Point Arrow"
+		SetBorderColor 200 200 0 255
+		SetBackgroundColor 35 100 20 255          
+		SetFontSize 38
+	Show
+		ItemLevel <= 65	
+		ItemLevel > 12
+		Rarity Rare	
+		Class "Bow" "Quiver" 
+		SetBorderColor 200 200 0 255         
+		SetFontSize 38
+	Show
+		ItemLevel <= 65
+		ItemLevel > 12
+		Rarity Rare
+		Class "Gloves" "Boots" "Helmets" "Body Armour"
+		SetBorderColor 200 200 0 255 
+		SetFontSize 38
+	Show
+		ItemLevel <= 65	
+		ItemLevel > 12
+		Rarity Rare
+		Class "Rings" "Amulets" "Belts" 
+		BaseType "Two-Stone" "Ruby" "Sapphire" "Topaz" "Prismatic" "Amethyst" "Coral Ring" "Citrine" "Turquoise" "Agate" "Onyx" "Leather Belt" "Heavy Belt" "Rustic Sash"
+		SetBorderColor 200 200 0 255 
+		SetFontSize 38
+	Show
+		ItemLevel <= 65
+		ItemLevel > 12
+		Rarity Rare		
+		SetBackgroundColor 0 0 0 200
+		SetFontSize 30
+
+#------------------------------------------------------------------------
+# [0024-5] Act 2 to 6 
+#------------------------------------------------------------------------
+	Show
+		ItemLevel <= 50
+		ItemLevel > 14
+		Rarity Magic
+		BaseType "Two-Stone" "Ruby" "Sapphire" "Topaz" "Prismatic" "Coral Ring" "Citrine" "Turquoise" "Agate" "Onyx" "Heavy Belt" "Leather Belt" "Rustic Sash"		
+		SetTextColor 25 95 235 255
+		SetBorderColor 255 170 0 255
+		SetFontSize 32
+	Show
+		ItemLevel <= 50
+		ItemLevel > 12
+		Rarity Magic
+		Class "Bow"
+		SetTextColor 25 95 235 255
+		SetBorderColor 255 170 0 255
+		SetFontSize 32
+	Show
+		ItemLevel <= 50
+		ItemLevel > 12
+		Rarity Magic		
+		SetBackgroundColor 0 0 0 200
+		SetFontSize 30
+
+#------------------------------------------------------------------------
+# [0024-6] Act 1 
+#------------------------------------------------------------------------
+	Show
+		ItemLevel <= 12
+		Rarity Normal
+		Class "Bow" "Quiver"
+		SetTextColor 255 255 255 255
+		SetBorderColor 255 170 0 255
+		SetFontSize 36
+	Show
+		ItemLevel <= 12
+		Rarity Magic
+		Class "Bow" "Quiver"
+		SetTextColor 25 95 235 255
+		SetBorderColor 255 170 0 255
+		SetFontSize 36
+	Show
+		ItemLevel <= 12
+		Rarity Rare
+		Class "Bow" "Quiver"
+		SetBorderColor 200 200 0 255
+		SetFontSize 40
+		PlayAlertSound 13 300
+	Show
+		ItemLevel <= 12
+		Rarity Magic
+		Class "Boots"
+		SetTextColor 25 95 235 255
+		SetBorderColor 255 170 0 255
+		SetFontSize 36
+	Show
+		ItemLevel <= 12
+		Rarity Rare
+		Class "Gloves" "Boots" "Helmets" "Body Armour"	
+		SetBorderColor 200 200 0 255
+		SetFontSize 40
+	Show
+		ItemLevel <= 14
+		Rarity Normal
+		BaseType "Coral Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Leather Belt" "Heavy Belt" "Rustic Sash" "Iron Ring"	
+		SetTextColor 255 255 255 255
+		SetBorderColor 255 170 0 255
+		SetFontSize 36
+	Show
+		ItemLevel <= 14
+		Rarity Magic
+		BaseType "Coral Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Leather Belt" "Heavy Belt" "Rustic Sash" "Iron Ring"
+		SetTextColor 25 95 235 255
+		SetBorderColor 255 170 0 255
+		SetFontSize 36
+	Show
+		ItemLevel <= 14
+		Rarity Rare
+		BaseType "Coral Ring" "Sapphire Ring" "Ruby Ring" "Topaz Ring" "Leather Belt" "Heavy Belt" "Rustic Sash" "Iron Ring"	
+		SetBorderColor 200 200 0 255
+		SetFontSize 40
+		PlayAlertSound 13 300	
+	Show
+		ItemLevel <= 12
+		Rarity Rare		
+		SetBackgroundColor 0 0 0 200
+		SetFontSize 32
+	Show
+		ItemLevel <= 12
+		Rarity Magic		
+		SetBackgroundColor 0 0 0 200
+		SetFontSize 32
+	Show
+		ItemLevel <= 8
+		Rarity Normal		
+		SetBackgroundColor 0 0 0 200
+		SetFontSize 32
