@@ -130,6 +130,31 @@
 # [0000] Special Block for New League Content
 #========================================================================================================================================================
 	
+	Show
+		Class "Map Fragment"
+		BaseType "Gilded"
+		SetTextColor 255 190 0 255
+		SetBorderColor 255 190 0 255
+		SetFontSize 42
+		PlayAlertSound 2 300
+		MinimapIcon 0 Hexagon Green
+
+	Show
+		Class "Map Fragment"
+		BaseType "Polished"
+		SetTextColor 200 0 200 255
+		SetBorderColor 200 0 200 255
+		SetFontSize 40
+		PlayAlertSound 2 300
+		MinimapIcon 2 Hexagon Green
+
+	Show
+		Class "Map Fragment"
+		BaseType "Rusted"
+		SetTextColor 200 0 200 255
+		SetBorderColor 200 0 200 255
+		SetFontSize 40
+		
 
 #========================================================================================================================================================
 # [0001] 6-Linked & 5-Linked Items
