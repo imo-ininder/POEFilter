@@ -3,21 +3,21 @@
 #																		#
 #	Tier SS : Font Size 45 => Mirror of Klanda 							#
 #																		#
-#	Tier S : Font Size 42 => 6-Linked、Value Altas Bases(iLv 84+)、 	#
-#			 T1 Currency、T1 Unique、T1 Card、T16 Map、New Patch Items  #
+#	Tier S : Font Size 42 => 6-Linked、Value Altas Bases(iLv 84+)、 		#
+#			 T1 Currency、T1 Unique、T1 Card、T16 Map、New Patch Items  	#
 #																		#
-#	Tier 1 : Font Size 40 => 5-Linked、6-Sockets、Value Altas Bases、 	#
-#			 iLv 84+、T1 Rare(83+)、T1.5 Currency、Splinter、 			#
+#	Tier 1 : Font Size 40 => 5-Linked、6-Sockets、Value Altas Bases、 		#
+#			 iLv 84+、T1 Rare(83+)、T1.5 Currency、Splinter、 				#
 #			 T2 Card、Map(T11-15) 										#
 #																		#
 #	Tier 2 : Font Size 38 => Else Altas Bases、T1 Rare(75+)、 			#
-#			 T2 Currency、Unique、T3 Card、Map(T6-10)					#
+#			 T2 Currency、Unique、T3 Card、Map(T6-10)						#
 #																		#
-#	Tier 3 : Font Size 36 => Craft Items(iLv83+)、T1 Rare(65+)、 		#
-#			 Breach Ring、T1 Chancing、Jewel(Abyss Included)			#
-#			 、Q-Gems、T4 Card、Map(T1-6)、Map Misc	 					#
+#	Tier 3 : Font Size 36 => Craft Items(iLv83+)、T1 Rare(65+)、 			#
+#			 Breach Ring、T1 Chancing、Jewel(Abyss Included)				#
+#			 、Q-Gems、T4 Card、Map(T1-6)、Map Misc	 						#
 #																		#
-#	Tier 4 : Font Size 34 => T2 Rare、Other Currency、T2 Chancing、     #
+#	Tier 4 : Font Size 34 => T2 Rare、Other Currency、T2 Chancing、    	#
 #             Lab Items   		        								#
 #																		#
 #	Tier 5 : Font Size 32 (Default Size) => Leveling Items(iLv 65 less) #
@@ -93,7 +93,7 @@
 #### 	[0015-2] Shards
 #### 	[0015-3] League Specific Currency
 #### 	[0015-4] Essence
-#### 	[0015-5]Currency Recipe
+#### 	[0015-5] Currency Recipe
 #### 	[0015-6] Currency Catch Layer
 #### [0016] Unique Items
 #### [0017] Divination Cards
@@ -129,55 +129,7 @@
 #========================================================================================================================================================
 # [0000] Special Block for New League Content
 #========================================================================================================================================================
-	Show
-		Class "Misc Map Item"
-		BaseType "Timeworn Reliquary Key"
-		SetTextColor 255 0 0 255             
-		SetBorderColor 255 0 0 255   
-		SetFontSize 42
-		PlayAlertSound 6 300
-		MinimapIcon 0 Red Diamond
-	Show
-		Class "Stackable Currency"
-		BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator" 
-		SetTextColor 0 0 0 255 255       
-		SetBorderColor 0 0 0 255 255
-		SetBackgroundColor 0 169 255 255         
-		SetFontSize 42
-		PlayAlertSound 6 300
-		MinimapIcon 1 Red Circle
-	Show
-		Class "Stackable Currency"
-		BaseType "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" 
-		SetTextColor 0 0 0 255 255       
-		SetBorderColor 0 0 0 255 255
-		SetBackgroundColor 0 126 192 255
-		SetFontSize 40
-		PlayAlertSound 2 300
-	Show
-		Class "Stackable Currency"
-		BaseType "Potent Alchemical Resonator" "Potent Chaotic Resonator" 
-		SetTextColor 0 0 0 255 255       
-		SetBorderColor 0 0 0 255 255
-		SetBackgroundColor 0 84 128 255
-		SetFontSize 38
-		PlayAlertSound 2 300
-	Show
-		Class "Stackable Currency"
-		BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" 
-		SetTextColor 0 0 0 255 255       
-		SetBorderColor 0 0 0 255 255
-		SetBackgroundColor 0 42 64 255         
-		SetFontSize 38
-		PlayAlertSound 2 300
-	Show
-		Class "Stackable Currency"
-		BaseType "Fossil"
-		SetTextColor 128 70 70 255
-		SetBorderColor 255 255 0 255
-		SetBackgroundColor 255 153 0 240
-		SetFontSize 38
-		PlayAlertSound 2 300
+	
 
 #========================================================================================================================================================
 # [0001] 6-Linked & 5-Linked Items
@@ -213,12 +165,14 @@
 # [0003] RGB recipe
 #========================================================================================================================================================
 	Show
+		ItemLevel < 75
 		SocketGroup RGB
 		Width <= 2
 		Height <= 2
 		Rarity < Rare		
 		SetBorderColor 0 0 255
 	Show 
+		ItemLevel < 75
 		SocketGroup RGB
 		Width <= 1
 		Height <= 3
@@ -1281,6 +1235,50 @@
 	#	SetFontSize 38
 	#	DisableDropSound  True
 
+	#---------------------------------
+	# Delve
+	#---------------------------------
+	Show
+		Class "Currency"
+		BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator" 
+		SetTextColor 0 0 0 255 255       
+		SetBorderColor 0 0 0 255 255
+		SetBackgroundColor 0 169 255 255         
+		SetFontSize 42
+		PlayAlertSound 6 300
+		MinimapIcon 1 Red Circle
+	Show
+		Class "Currency"
+		BaseType "Powerful Alchemical Resonator" "Powerful Chaotic Resonator" 
+		SetTextColor 255 255 255 255 255       
+		SetBorderColor 0 0 0 255 255
+		SetBackgroundColor 0 126 192 255
+		SetFontSize 40
+		PlayAlertSound 2 300
+	Show
+		Class "Currency"
+		BaseType "Potent Alchemical Resonator" "Potent Chaotic Resonator" 
+		SetTextColor 255 255 255 255 255       
+		SetBorderColor 0 0 0 255 255
+		SetBackgroundColor 0 84 128 255
+		SetFontSize 38
+		PlayAlertSound 2 300
+	Show
+		Class "Currency"
+		BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator" 
+		SetTextColor 255 255 255 255       
+		SetBorderColor 0 0 0 255 255
+		SetBackgroundColor 0 42 64 255         
+		SetFontSize 36
+	Show
+		Class "Currency"
+		BaseType "Fossil"
+		SetTextColor 128 70 70 255
+		SetBorderColor 255 255 0 255
+		SetBackgroundColor 255 153 0 240
+		SetFontSize 38
+		PlayAlertSound 2 300
+
 #------------------------------------------------------------------------
 # [0015-4] Essence
 #------------------------------------------------------------------------
@@ -1330,7 +1328,7 @@
 #------------------------------------------------------------------------
 # [0015-5]Currency Recipe
 #------------------------------------------------------------------------
-	Show
+	Hide
 		Rarity = Normal
 		BaseType "Stone Hammer" "Rock Breaker" "Gavel"		
 		SetTextColor 0 0 0
@@ -1366,6 +1364,12 @@
 		SetFontSize 42  
 		PlayAlertSound 6 300
 		MinimapIcon 0 Red Diamond
+		PlayEffect Brown
+	Show
+		Rarity Unique
+		Class "Rings"
+		SetBorderColor 175 96 37 255
+		SetFontSize 38
 		PlayEffect Brown
 	Show
 		Rarity Unique
@@ -1476,23 +1480,15 @@
 # [0019-2] T16 Maps
 #------------------------------------------------------------------------
 	Show 
-		Class Maps 
-		ElderMap True
-		SetTextColor 100 0 122 255           
-		SetBorderColor 100 0 255 255         
-		SetBackgroundColor 255 255 255 255   
-		SetFontSize 42
-		PlayAlertSound 6 300
-		PlayEffect Red
-	Show 
 		Class Maps
-		BaseType "Forge of the Phoenix Map" "Maze of the Minotaur Map" "Lair of the Hydra Map" "Pit of the Chimera Map" "Vaal Temple Map"
+		MapTier 16
 		SetTextColor 100 0 122 255           
 		SetBorderColor 100 0 255 255         
 		SetBackgroundColor 255 255 255 255   
 		SetFontSize 42
 		PlayAlertSound 6 300
 		PlayEffect Red
+		MinimapIcon 0 Brown Triangle
 
 #------------------------------------------------------------------------
 # [0019-3] T11 - T15 Maps (Shaped Included)
@@ -1506,28 +1502,11 @@
 		SetFontSize 40
 		PlayAlertSound 6 300
 		PlayEffect Red
-	#Show
-	#	Class Maps
-	#	ShapedMap True
-	#	DropLevel >= 73
-	#	SetTextColor 230 230 230          
-	#	SetBorderColor 255 255 255            
-	#	SetBackgroundColor 180 51 36 255
-	#	SetFontSize 40
-	#	PlayAlertSound 6 300
+		MinimapIcon 1 Red Triangle
 
 #------------------------------------------------------------------------
 # [0019-4] T6 - T10 Maps (Shaped Included)
 #------------------------------------------------------------------------
-	#Show
-	#	Class Maps
-	#	ShapedMap True
-	#	DropLevel < 73
-	#	SetTextColor 230 230 230          
-	#	SetBorderColor 255 255 255            
-	#	SetBackgroundColor 200 123 18 255
-	#	SetFontSize 36
-	#	PlayAlertSound 4 300
 	Show
 		Class Maps
 		ItemLevel >= 80
@@ -1577,6 +1556,7 @@
 		SetFontSize 38
 		PlayAlertSound 4 300
 		PlayEffect Yellow Temp
+		MinimapIcon 1 Yellow Triangle
 
 #------------------------------------------------------------------------
 # [0019-5] T1 - T5 Maps
@@ -1630,6 +1610,7 @@
 		SetFontSize 34
 		PlayAlertSound 4 150
 		PlayEffect White Temp
+		MinimapIcon 2 White Triangle
 
 #------------------------------------------------------------------------
 # [0019-6] Map Misc Items
@@ -1656,6 +1637,14 @@
 		SetBackgroundColor 180 0 0 255
 		SetFontSize 36
 		PlayAlertSound 2 300
+	Show
+		Class "Misc Map Item"
+		BaseType "Timeworn Reliquary Key"
+		SetTextColor 255 0 0 255             
+		SetBorderColor 255 0 0 255   
+		SetFontSize 42
+		PlayAlertSound 6 300
+		MinimapIcon 0 Red Diamond
 
 #========================================================================================================================================================
 # [0020] Labyrinth 、 Quest Items and Shaper Orbs
