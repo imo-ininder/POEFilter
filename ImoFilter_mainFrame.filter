@@ -1357,7 +1357,7 @@ Show
 		SetBorderColor 0 0 0 255             
 		SetBackgroundColor 30 159 200 150
 		SetFontSize 36
-		
+
 #------------------------------------------------------------------------
 # [0015-5]Currency Recipe
 #------------------------------------------------------------------------
@@ -1540,7 +1540,10 @@ Show
 
 #------------------------------------------------------------------------
 # [0019-4] T6 - T10 Maps (Shaped Included)
-#------------------------------------------------------------------------
+#------------------------------------------------------------------------	
+	#---------------------------------
+	# Show out of level rage maps
+	#---------------------------------
 	Show
 		Class Maps
 		ItemLevel >= 80
@@ -1581,6 +1584,9 @@ Show
 		SetBorderColor  150 150 150
 		SetBackgroundColor  0 0 0 185
 		DisableDropSound  True
+	#---------------------------------
+	# Real map showing block
+	#---------------------------------
 	Show
 		Class Maps
 		MapTier >= 6
@@ -1595,6 +1601,9 @@ Show
 #------------------------------------------------------------------------
 # [0019-5] T1 - T5 Maps
 #------------------------------------------------------------------------
+	#---------------------------------
+	# Show out of level rage maps
+	#---------------------------------
 	Show
 		Class Maps 
 		ItemLevel >= 75
@@ -1635,6 +1644,9 @@ Show
 		SetBorderColor  150 150 150
 		SetBackgroundColor  0 0 0 185
 		DisableDropSound  True
+	#---------------------------------
+	# Real map showing block
+	#---------------------------------
 	Show
 		Class Maps
 		MapTier <= 6
@@ -1658,12 +1670,12 @@ Show
 		DisableDropSound  True
 	Show 
 		Class "Map Fragments"
-		BaseType "Mortal Hope" "Mortal Ignorance"
-		SetFontSize 42
+		BaseType "Mortal Hope" "Mortal Ignorance"		
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0 255             
-		SetBackgroundColor 255 255 255 255   
-		PlayAlertSound 6 300                 
+		SetBackgroundColor 255 255 255 255
+		SetFontSize 42   
+		PlayAlertSound 2 300                 
 	Show 
 		Class "Map Fragments"
 		SetTextColor 0 0 0 255               
