@@ -160,7 +160,14 @@
 		HasExplicitMod "Veil"
 		SetBackgroundColor 110 90 90 255
 		SetBorderColor 165 165 165 255
-		SetFontSize 45
+		SetFontSize 42
+		PlayAlertSound 14 300
+
+	Show 
+		HasExplicitMod "Veil"
+		SetBackgroundColor 110 90 90 255
+		SetBorderColor 165 165 165 255
+		SetFontSize 42
 		PlayAlertSound 14 300
 		
 
@@ -330,7 +337,6 @@
 		SetBorderColor 255 255 255 255
 		SetFontSize 42
 		PlayAlertSound 3 300
-		MinimapIcon 2 Red Diamond
 	Show 
 		ShaperItem True		
 		ItemLevel >= 86
@@ -341,7 +347,6 @@
 		SetBorderColor 255 255 255 255
 		SetFontSize 42
 		PlayAlertSound 3 300
-		MinimapIcon 2 Red Diamond
 	Show 
 		ShaperItem True
 		ItemLevel >= 83
@@ -353,7 +358,6 @@
 		SetBorderColor 255 255 255 255
 		SetFontSize 42
 		PlayAlertSound 3 300
-		MinimapIcon 2 Red Diamond
 	Show 
 		ShaperItem True
 		Rarity <= Rare
@@ -363,7 +367,6 @@
 		SetBorderColor 255 255 255 255
 		SetFontSize 42
 		PlayAlertSound 3 300
-		MinimapIcon 2 Red Diamond
 
 #------------------------------------------------------------------------
 # [0005-3] Else Shaper Items
@@ -464,7 +467,6 @@
 		SetBorderColor 255 255 255 255
 		SetFontSize 42
 		PlayAlertSound 3 300
-		MinimapIcon 2 Red Diamond
 	Show 
 		ElderItem True
 		ItemLevel >= 86
@@ -475,7 +477,6 @@
 		SetBorderColor 255 255 255 255
 		SetFontSize 42
 		PlayAlertSound 3 300
-		MinimapIcon 2 Red Diamond
 	Show 
 		ElderItem True
 		ItemLevel >= 83
@@ -487,7 +488,6 @@
 		SetBorderColor 255 255 255 255
 		SetFontSize 42
 		PlayAlertSound 3 300
-		MinimapIcon 2 Red Diamond
 
 #------------------------------------------------------------------------
 # [0006-3] Else Elder Items
