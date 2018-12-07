@@ -1315,49 +1315,49 @@
 #------------------------------------------------------------------------
 # [0015-4] Essence
 #------------------------------------------------------------------------
-	Show 
+Show 
 		Class Currency
 		BaseType "Shrieking Essence of" "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Deafening Essence of" "Remnant of Corruption"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0 255             
-		SetBackgroundColor 249 150 50 255
+		SetBackgroundColor 159 15 213 255
 		SetFontSize 40                    
 	Show
 		Class Currency
 		BaseType "Screaming Essence of"		
-		SetTextColor 0 0 0 255              
-		SetBorderColor 0 0 0 255            
-		SetBackgroundColor 0 250 0 255
+		SetTextColor 0 0 0 255               
+		SetBorderColor 0 0 0 255             
+		SetBackgroundColor 15 180 200 255
 		SetFontSize 40 	               
 	Show
 		Class Currency
 		BaseType "Wailing Essence of"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0 255             
-		SetBackgroundColor 30 200 30 255
+		SetBackgroundColor 30 159 200 255
 		SetFontSize 40
 	Show
 		Class Currency
 		BaseType "Weeping Essence of"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
-		SetBackgroundColor 30 200 30 200
+		SetBackgroundColor 30 159 200 200
 		SetFontSize 38
 	Show
 		Class Currency
 		BaseType "Muttering Essence of"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0 255             
-		SetBackgroundColor 70 200 70 175
+		SetBackgroundColor 30 159 200 175
 		SetFontSize 38    
 	Show
 		Class Currency
 		BaseType "Whispering Essence of"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0 255             
-		SetBackgroundColor 70 200 70 150
+		SetBackgroundColor 30 159 200 150
 		SetFontSize 36
-
+		
 #------------------------------------------------------------------------
 # [0015-5]Currency Recipe
 #------------------------------------------------------------------------
