@@ -117,13 +117,13 @@
 ####	[0023-3] Leveling Mana Flasks
 ####	[0023-4] Leveling Hybrid Flasks
 ####	[0023-5] Leveling Utility Flasks
-####[0023] Leveling Filter
-####	[0023-1] Hiding Rule
-####	[0023-2] 4 Link Gears
-####	[0023-3] 3 Link Gears
-####	[0023-4] Rare Gears
-####	[0023-5] Act 2 to 6
-####	[0023-6] Act 1 
+####[0024] Leveling Filter
+####	[0024-1] Hiding Rule
+####	[0024-2] 4 Link Gears
+####	[0024-3] 3 Link Gears
+####	[0024-4] Rare Gears
+####	[0024-5] Act 2 to 6
+####	[0024-6] Act 1 
 #### [HIDE] HIDE EVERYTHING ELSE
 
 #========================================================================================================================================================
@@ -154,6 +154,14 @@
 		SetTextColor 200 0 200 255
 		SetBorderColor 200 0 200 255
 		SetFontSize 40
+
+	Show 
+		Identified True
+		HasExplicitMod "Veil"
+		SetBackgroundColor 110 90 90 255
+		SetBorderColor 165 165 165 255
+		SetFontSize 45
+		PlayAlertSound 14 300
 		
 
 #========================================================================================================================================================
