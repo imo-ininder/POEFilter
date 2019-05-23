@@ -76,7 +76,7 @@
 #### [0008] Altas bases
 #### 	[0008-1] Value Bases
 #### 	[0008-2] Non-Value Bases
-#### 	[0008-3] Almost Trash Bases
+#### 	[0008-3] Relative Common Bases
 #### [0009] Chancing Items (Defualt Hiding)
 #### [0010] Crafting Rule (Defualt Hiding)
 #### 	[0010-1] 86+ Endgame crafting rules
@@ -120,13 +120,6 @@
 ####	[0023-3] Leveling Mana Flasks
 ####	[0023-4] Leveling Hybrid Flasks
 ####	[0023-5] Leveling Utility Flasks
-####[0024] Leveling Filter
-####	[0024-1] Hiding Rule
-####	[0024-2] 4 Link Gears
-####	[0024-3] 3 Link Gears
-####	[0024-4] Rare Gears
-####	[0024-5] Act 2 to 6
-####	[0024-6] Act 1 
 #### [HIDE] HIDE EVERYTHING ELSE
 
 #========================================================================================================================================================
@@ -2320,3 +2313,8 @@
 		SetBackgroundColor 25 100 75
 		SetBorderColor 50 200 125 255
 		SetFontSize 36
+
+#========================================================================================================================================================
+# [HIDE] HIDE EVERYTHING ELSE
+#========================================================================================================================================================
+	Hide

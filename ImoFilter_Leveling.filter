@@ -76,7 +76,7 @@
 #### [0008] Altas bases
 #### 	[0008-1] Value Bases
 #### 	[0008-2] Non-Value Bases
-#### 	[0008-3] Almost Trash Bases
+#### 	[0008-3] Relative Common Bases
 #### [0009] Chancing Items (Defualt Hiding)
 #### [0010] Crafting Rule (Defualt Hiding)
 #### 	[0010-1] 86+ Endgame crafting rules
@@ -136,7 +136,7 @@
 	
 
 #========================================================================================================================================================
-# [0001] 6-Linked
+# [0001] 6-Linked & Tabula Rasa
 #========================================================================================================================================================
 	Show
 		LinkedSockets 6
@@ -145,7 +145,16 @@
 		SetBorderColor 255 0 0 255   
 		SetFontSize 42
 		PlayAlertSound 6 300
-		MinimapIcon 0 Red Diamond	
+		MinimapIcon 0 Red Diamond
+	Show
+		SocketGroup WWWWWW
+		SetTextColor 175 96 37 255          
+		SetBorderColor 175 96 37 255        
+		SetBackgroundColor 255 255 255 255
+		SetFontSize 42  
+		PlayAlertSound 6 300
+		MinimapIcon 0 Red Diamond
+		PlayEffect Brown
 
 #========================================================================================================================================================
 # [0002] 6-Sockets & 5-Linked Items
