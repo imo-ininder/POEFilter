@@ -1299,7 +1299,7 @@
 		BaseType "Orb of Chance" "Blessed Orb" "Orb of Alteration" "Jeweller's Orb" "Bestiary Orb" "Orb of Binding" "Engineer's Orb"  
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
-		SetBackgroundColor 240 100 100 255
+		SetBackgroundColor 240 200 200 255
 		DisableDropSound True
 		SetFontSize 40
 	Show
@@ -1307,7 +1307,7 @@
 		BaseType "Chromatic Orb" "Glassblower's Bauble" "Blacksmith's"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
-		SetBackgroundColor 240 200 200 255
+		SetBackgroundColor 210 200 150 255
 		SetFontSize 40
 	Show
 		Class Currency
