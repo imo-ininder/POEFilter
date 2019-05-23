@@ -1255,55 +1255,66 @@
 	Show  
 		Class Currency
 		BaseType "Exalted Orb" "Eternal Orb" "Albino Rhoa Feather" "Mirror Shard"
-	    SetTextColor 255 0 0 255             
-		SetBorderColor 255 0 0 255             
+		SetTextColor 255 255 255 255  
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 255 0 0 255        
 		SetFontSize 45
 		PlayAlertSound 6 300
 		MinimapIcon 0 Red Circle
 	Show
 		Class Currency
 		BaseType "Divine Orb" "Orb of Annulment" "Harbinger's Orb" "Ancient Orb"		
-		SetTextColor 255 125 0 255    
-		SetBorderColor 255 125 0 255
+		SetTextColor 255 255 255 255  
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 255 125 0 255
 		PlayAlertSound 1 300
 		SetFontSize 42       
 		DisableDropSound True
 		MinimapIcon 1 Red Circle
 	Show
 		Class Currency
-		BaseType "Master Cartographer's Sextant"		
-		SetTextColor 255 125 0 255    
-		SetBorderColor 255 125 0 255
+		BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant"
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 255 125 0 255
 		PlayAlertSound 2 300
 		SetFontSize 42
+		DisableDropSound True
 		MinimapIcon 1 Red Circle
 	Show 
 		Class Currency
-		BaseType "Chaos Orb"  "Journeyman Cartographer's Sextant" "Regal Orb" "Orb of Regret" "Vaal Orb"
-		SetTextColor 255 190 0 255
-		SetBorderColor 255 190 0 255
+		BaseType "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb"
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 255 190 0 255
 		SetFontSize 42
 		PlayAlertSound 2 300
+		DisableDropSound True
 		MinimapIcon 1 Yellow Circle
 	Show 
 		Class Currency
 		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Apprentice Cartographer's Sextant" "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" 
-		SetTextColor 213 159 0 255
-		SetBorderColor 213 159 0 255
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 213 159 0 255
 		SetFontSize 40
 		PlayAlertSound 2 300
+		DisableDropSound True
 		MinimapIcon 1 White Circle
 	Show
 		Class Currency 
 		BaseType "Orb of Chance" "Blessed Orb" "Orb of Alteration" "Jeweller's Orb" "Bestiary Orb" "Orb of Binding" "Engineer's Orb"  
-		SetTextColor 240 100 100 255
-		SetBorderColor 240 100 100 255
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 240 100 100 255
+		DisableDropSound True
 		SetFontSize 40
 	Show
 		Class Currency 
 		BaseType "Chromatic Orb" "Glassblower's Bauble" "Blacksmith's"
-		SetTextColor 210 178 135 255
-		SetBorderColor 210 178 135 255
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 240 200 200 255
 		SetFontSize 40
 	Show
 		Class Currency
