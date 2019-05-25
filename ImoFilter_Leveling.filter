@@ -152,7 +152,7 @@
 		SetTextColor 255 0 0 255             
 		SetBorderColor 255 0 0 255   
 		SetFontSize 42  
-		PearllayAlertSound 1 300
+		PlayAlertSound 1 300
 		MinimapIcon 0 Red Diamond
 	Show
 		SocketGroup WWWWWW
@@ -363,7 +363,7 @@
 		ShaperItem True		
 		ItemLevel >= 84
 		Rarity <= Rare
-		Class "Body Amours"
+		Class "Body Armours"
 		BaseType "Astral Plate" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment"
 		SetBackgroundColor 66 66 0 255
 		SetTextColor 255 255 255 255
@@ -424,8 +424,7 @@
 		ItemLevel >= 80
 		Rarity <= Rare
 		Class "Shield" 
-		BaseType "Sambar Sceptre" "Void Sceptre" "Carnal Sceptre" "Vaal Sceptre" "Opal Sceptre" "Harpy Rapier" "Thorn Rapier" "Apex Rapier" "Tiger Hook" "Imperial Claw" "Gemini Claw"
-		"Kris" "Skean" "Kai" "Imperial Bow" "Thicket Bow" "Eclipse Staff" "Moon Staff" "Opal Wand" "Prophecy Wand" "Tornado Wand"
+		BaseType "Sambar Sceptre" "Void Sceptre" "Carnal Sceptre" "Vaal Sceptre" "Opal Sceptre" "Harpy Rapier" "Thorn Rapier" "Apex Rapier" "Tiger Hook" "Imperial Claw" "Gemini Claw" "Kris" "Skean" "Sai" "Imperial Bow" "Thicket Bow" "Eclipse Staff" "Moon Staff" "Opal Wand" "Prophecy Wand" "Tornado Wand"
 		SetBackgroundColor 66 66 0 255 
 		SetTextColor 255 255 255 255
 		SetBorderColor 255 255 255 255
