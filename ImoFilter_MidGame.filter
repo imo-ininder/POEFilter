@@ -1668,7 +1668,7 @@
 		SetFontSize 36
 	Show 
 		Class Divination
-		BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "Seven Years Bad Luck" "The Doctor" "The Dragon's Heart" "The Ethereal" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Life Thief" "The Master" "The Mayor" "The Nurse" "The Offering" "The Risk" "The Samurai's Eye" "The Spark and the Flame" "The Wind" "The Wolven King's Bite" "Wealth and Power"
+		BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Mayor" "The Nurse" "The Queen" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "Wealth and Power"
 		SetTextColor 0 0 255 255             
 		SetBorderColor 0 0 255 255           
 		SetBackgroundColor 255 255 255 255
@@ -1677,7 +1677,7 @@
 		MinimapIcon 0 Blue Square
 	Show 
 		Class Divination
-		BaseType "Chaotic Disposition" "The Artist" "The Brittle Emperor" "The Cartographer" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Enlightened" "The Hoarder" "The Landing" "The Polymath" "The Professor" "The Queen" "The Sacrifice" "The Saint's Treasure" "The Sephirot" "The Undaunted" "The Vast" "The Void" "The Wolf" "The World Eater"
+		BaseType "Boon of the First Ones" "Chaotic Disposition" "Perfection" "The Artist" "The Brittle Emperor" "The Cartographer" "The Enlightened" "The Hoarder" "The King's Heart" "The Landing" "The Offering" "The Professor" "The Sephirot" "The Undaunted" "The Valkyrie" "The Void"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 255 255 0 255         
 		SetBackgroundColor 100 250 250 245
@@ -1686,7 +1686,7 @@
 		MinimapIcon 1 Blue Square  
 	Show 
 		Class Divination
-		BaseType "Alone in the Darkness" "Arrogance of the Vaal" "Assassin's Favour" "Atziri's Arsenal" "Blind Venture" "Boon of the First Ones" "Bowyer's Dream" "Emperor of Purity" "Glimmer of Hope" "Harmony of Souls" "Heterochromia" "Humility" "Jack in the Box" "Last Hope" "Left to Fate" "Lingering Remnants" "Lucky Connections" "Lucky Deck" "Monochrome" "No Traces" "Perfection" "Rebirth" "Sambodhi's Vow" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Avenger" "The Body" "The Breach" "The Cacophony" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Encroaching Darkness" "The Endless Darkness" "The Formless Sea" "The Gladiator" "The Hale Heart" "The Hunger" "The Innocent" "The Inventor" "The Jester" "The Jeweller's Boon" "The Journey" "The Last One Standing" "The Lion" "The Mad King" "The Mercenary" "The Messenger" "The Obscured" "The Penitent" "The Porcupine" "The Price of Protection" "The Seeker" "The Surveyor" "The Thaumaturgist" "The Throne" "The Traitor" "The Trial" "The Twilight Moon" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wretched" "Time-Lost Relic"
+		BaseType "Alone in the Darkness" "Bowyer's Dream" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Left to Fate" "Monochrome" "No Traces" "Sambodhi's Vow" "The Breach" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Encroaching Darkness" "The Ethereal" "The Hale Heart" "The Innocent" "The Inventor" "The Jeweller's Boon" "The Journey" "The Master" "The Polymath" "The Porcupine" "The Sacrifice" "The Survivalist" "The Thaumaturgist" "The Throne" "The Undisputed" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The Wretched" "Time-Lost Relic"
 		SetTextColor 0 0 0 255              
 		SetBorderColor 0 0 255 255          
 		SetBackgroundColor 50 220 240 235
@@ -1695,7 +1695,7 @@
 		MinimapIcon 2 Blue Square
 	Hide 
 		Class Divination
-		BaseType "A Mother's Parting Gift" "Anarchy's Price" "Birth of the Three" "Carrion Crow" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Doedre's Madness" "Dying Anguish" "Forbidden Power" "Grave Knowledge" "Hermit" "King's Blade" "Lantador's Lost Love" "Light and Truth" "Metalsmith's Gift" "Might is Right" "Other Cheek" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Betrayal" "The Blazing Fire" "The Calling" "The Coming Storm" "The Deceiver" "The Eye of the Dragon" "The Fox" "The Incantation" "The Inoculated" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Pack Leader" "The Pact" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Surgeon" "The Twins" "The Visionary" "The Warden" "The Watcher" "The Witch" "Thunderous Skies" "Tranquillity" "Volatile Power" "The Golden Era"
+		BaseType "A Mother's Parting Gift" "Anarchy's Price" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Grave Knowledge" "Lantador's Lost Love" "Might is Right" "Rain of Chaos" "Rats" "Shard of Fate" "Struck by Lightning" "The Army of Blood" "The Carrion Crow" "The Endurance" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lunaris Priestess" "The Metalsmith's Gift" "The Opulent" "The Rabid Rhoa" "The Scarred Meadow" "The Sigil" "The Summoner" "The Surgeon" "The Sword King's Salute" "The Warden" "The Watcher" "The Witch" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Volatile Power"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0                 
 		SetBackgroundColor 175 215 230 180 
