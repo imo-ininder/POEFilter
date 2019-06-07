@@ -1815,7 +1815,7 @@
 		SetFontSize 36
 	Show 
 		Class Divination
-		BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Mayor" "The Nurse" "The Queen" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "Wealth and Power" "Burning Blood" "Echoes of Love" "Alluring Bounty" "Pride of the First Ones" "Buried Treasure"
+		BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Mayor" "The Nurse" "The Queen" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "Wealth and Power" "Burning Blood" "Alluring Bounty" "Pride of the First Ones" "Buried Treasure"
 		SetTextColor 0 0 255 255             
 		SetBorderColor 0 0 255 255           
 		SetBackgroundColor 255 255 255 255
@@ -2594,7 +2594,7 @@
 		ItemLevel >= 24
 		ItemLevel < 34
 		Rarity Rare	
-		BaseType "Dream Mace" "Bladed Mace" "Spectral Axe" "Arming Axe" "Shadow Axe" "Double Axe" "Elegant Sword" "Dusk Blade" "Spectral Sword" "Royal Bow" "Sparkling Claw" "Vile Staff"
+		BaseType "Dream Mace" "Bladed Mace" "Spectral Axe" "Arming Axe" "Shadow Axe" "Double Axe" "Elegant Sword" "Dusk Blade" "Spectral Sword" "Royal Bow" "Sparkling Claw" "Vile Staff" "Coiled Staff"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
 		SetFontSize 45
@@ -2609,6 +2609,16 @@
 		SetFontSize 45
 		PlayAlertSound 2 300
 		MinimapIcon 0 Green Hexagon
+	Show #A3 Magic		
+		ItemLevel >= 24
+		ItemLevel < 34
+		Rarity Magic	
+		BaseType "Dream Mace" "Bladed Mace" "Spectral Axe" "Arming Axe" "Shadow Axe" "Double Axe" "Elegant Sword" "Dusk Blade" "Spectral Sword" "Royal Bow" "Sparkling Claw" "Vile Staff"
+		SetTextColor 25 95 235 255
+		SetBorderColor 255 170 0 255      
+		SetFontSize 38
+		PlayAlertSound 9 300
+		MinimapIcon 2 White Hexagon
 	Show #A2 Magic
 		ItemLevel < 24
 		ItemLevel >= 13

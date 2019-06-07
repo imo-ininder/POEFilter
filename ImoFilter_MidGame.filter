@@ -1794,7 +1794,7 @@
 		SetFontSize 36
 	Show 
 		Class Divination
-		BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Mayor" "The Nurse" "The Queen" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "Wealth and Power" "Burning Blood" "Echoes of Love" "Alluring Bounty" "Pride of the First Ones" "Buried Treasure"
+		BaseType "Abandoned Wealth" "Beauty Through Death" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Mawr Blaidd" "Pride Before the Fall" "Seven Years Bad Luck" "The Celestial Stone" "The Doctor" "The Dragon's Heart" "The Fiend" "The Immortal" "The Iron Bard" "The Life Thief" "The Mayor" "The Nurse" "The Queen" "The Risk" "The Saint's Treasure" "The Samurai's Eye" "The Seeker" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "Wealth and Power" "Burning Blood" "Alluring Bounty" "Pride of the First Ones" "Buried Treasure"
 		SetTextColor 0 0 255 255             
 		SetBorderColor 0 0 255 255           
 		SetBackgroundColor 255 255 255 255
@@ -1803,7 +1803,7 @@
 		MinimapIcon 0 Blue Square
 	Show 
 		Class Divination
-		BaseType "Boon of the First Ones" "Chaotic Disposition" "Perfection" "The Artist" "The Brittle Emperor" "The Cartographer" "The Enlightened" "The Hoarder" "The King's Heart" "The Landing" "The Offering" "The Professor" "The Sephirot" "The Undaunted" "The Valkyrie" "The Void" "Thirst for Knowledge" "Demigod's Wager"
+		BaseType "Boon of the First Ones" "Chaotic Disposition" "Perfection" "The Artist" "The Brittle Emperor" "The Cartographer" "The Enlightened" "The Hoarder" "The King's Heart" "The Landing" "The Offering" "The Professor" "The Sephirot" "The Undaunted" "The Valkyrie" "The Void"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 255 255 0 255         
 		SetBackgroundColor 100 250 250 245
@@ -1812,7 +1812,7 @@
 		MinimapIcon 1 Blue Square  
 	Show 
 		Class Divination
-		BaseType "Alone in the Darkness" "Bowyer's Dream" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Left to Fate" "Monochrome" "No Traces" "Sambodhi's Vow" "The Breach" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Encroaching Darkness" "The Ethereal" "The Hale Heart" "The Innocent" "The Inventor" "The Jeweller's Boon" "The Journey" "The Master" "The Polymath" "The Porcupine" "The Sacrifice" "The Survivalist" "The Thaumaturgist" "The Throne" "The Undisputed" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The Wretched" "Time-Lost Relic" "Vanity" "Imperial Legacy" "The Primordial" "The Deep Ones" "Dark Dreams"
+		BaseType "Alone in the Darkness" "Bowyer's Dream" "Emperor of Purity" "Heterochromia" "Humility" "Last Hope" "Left to Fate" "Monochrome" "No Traces" "Sambodhi's Vow" "The Breach" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Encroaching Darkness" "The Ethereal" "The Hale Heart" "The Innocent" "The Inventor" "The Jeweller's Boon" "The Journey" "The Master" "The Polymath" "The Porcupine" "The Sacrifice" "The Survivalist" "The Thaumaturgist" "The Throne" "The Undisputed" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The Wretched" "Time-Lost Relic" "Vanity" "Imperial Legacy" "The Primordial" "The Deep Ones" "Dark Dreams" ""Demigod's Wager""
 		SetTextColor 0 0 0 255              
 		SetBorderColor 0 0 255 255          
 		SetBackgroundColor 50 220 240 235
