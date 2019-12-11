@@ -3,25 +3,25 @@
 #																		#
 #	Tier SS : Font Size 45 => Mirror of Klanda 							#
 #																		#
-#	Tier S : Font Size 42 => 6-Linked、Value Altas Bases(iLv 84+)、 		#
-#			 T1 Currency、T1 Unique、T1 Card、T16 Map、New Patch Items  	#
+#	Tier S : Font Size 42 => 6-Linked, Value Altas Bases(iLv 84+), 	    #
+#			 T1 Currency, T1 Unique, T1 Card, T16 Map, New Patch Items  #
 #																		#
-#	Tier 1 : Font Size 40 => 5-Linked、6-Sockets、Value Altas Bases、 		#
-#			 iLv 84+、T1 Rare(83+)、T1.5 Currency、Splinter、 				#
-#			 T2 Card、Map(T11-15) 										#
+#	Tier 1 : Font Size 40 => 5-Linked, 6-Sockets, Value Altas Bases,  	#
+#			 iLv 84+, T1 Rare(83+), T1.5 Currency, Splinter,  			#
+#			 T2 Card, Map(T11-15) 										#
 #																		#
-#	Tier 2 : Font Size 38 => Else Altas Bases、T1 Rare(75+)、 			#
-#			 T2 Currency、Unique、T3 Card、Map(T6-10)						#
+#	Tier 2 : Font Size 38 => Else Altas Bases, T1 Rare(75+),  			#
+#			 T2 Currency, Unique, T3 Card, Map(T6-10)					#
 #																		#
-#	Tier 3 : Font Size 36 => Craft Items(iLv83+)、T1 Rare(65+)、 			#
-#			 Breach Ring、T1 Chancing、Jewel(Abyss Included)				#
-#			 、Q-Gems、T4 Card、Map(T1-6)、Map Misc	 						#
+#	Tier 3 : Font Size 36 => Craft Items(iLv83+), T1 Rare(65+),  		#
+#			 Breach Ring, T1 Chancing, Jewel(Abyss Included)			#
+#			 , Q-Gems, T4 Card, Map(T1-6), Map Misc	 					#
 #																		#
-#	Tier 4 : Font Size 34 => T2 Rare、Other Currency、T2 Chancing、    	#
+#	Tier 4 : Font Size 34 => T2 Rare, Other Currency, T2 Chancing,     	#
 #             Lab Items   		        								#
 #																		#
 #	Tier 5 : Font Size 32 (Default Size) => Leveling Items(iLv 65 less) #
-#			、Gems、T5 Card   											#
+#			, Gems, T5 Card   											#
 #																		#
 #########################################################################
 #	 
@@ -89,7 +89,7 @@
 #### 	[0011-5] Jewel
 #### [0012] Tier 2 Rare Items
 #### [0013] Rare Items 65+ (Leveling)
-#### [0014] HIDE LAYER - 65+ Weapon、Armor、Assestory
+#### [0014] HIDE LAYER - 65+ Weapon, Armor, Assestory
 #### [0015] Currency & Enssence
 #### 	[0015-1] Common Currency
 #### 	[0015-2] Shards
@@ -102,15 +102,16 @@
 #### [0018] Skill Gems
 #### [0019] Maps & Map Misc Items
 #### 	[0019-1] Custom Map Drop
-#### 	[0019-2] T16 Maps
-#### 	[0019-3] T11 - T15 Maps (Shaped Included)
-#### 	[0019-4] T6 - T10 Maps (Shaped Included)
-#### 	[0019-5] T1 - T5 Maps
-#### 	[0019-6] Map Misc Items
-#### [0020] Labyrinth 、 Quest Items and Shaper Orbs
+#### 	[0019-2] Influenced Map Drop
+#### 	[0019-3] T16 Maps
+#### 	[0019-4] T11 - T15 Maps (Shaped Included)
+#### 	[0019-5] T6 - T10 Maps (Shaped Included)
+#### 	[0019-6] T1 - T5 Maps
+#### 	[0019-7] Map Misc Items
+#### [0020] Labyrinth ,  Quest Items and Atlas Region Upgrade Item
 #### 	[0020-1] Labyrinth Items
 #### 	[0020-2] Quest Items
-#### 	[0020-3] Shaper Orbs
+#### 	[0020-3] Atlas Region Upgrade Item
 #### [0021] League Specific Item
 #### [0022] Flasks
 #### [L001] Flask (Leveling)
@@ -124,49 +125,19 @@
 #========================================================================================================================================================
 # [0000] Special Block for New League Content
 #========================================================================================================================================================
-	Show	
-		Class Currency
-		BaseType "Oil"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 190 0 255
+	Show
+		Class "Metamorph Sample"
 		SetFontSize 42
+		SetBorderColor 74 230 58
+		Show
+		Class Currency
+		BaseType "Catalyst"
+		SetTextColor 255 255 255 255
+		SetBorderColor 0 65 0 255
+		SetBackgroundColor 0 150 0 255
 		PlayAlertSound 2 300
-		MinimapIcon 1 Yellow Circle
-	Show
-		Class Maps
-		BlightedMap True
-		MapTier >= 11
-		SetTextColor 230 230 230    
-		SetBorderColor 255 190 0 255
-		SetBackgroundColor 180 51 36 255
-		SetFontSize 40
-		PlayAlertSound 5 300
-		PlayEffect Red
-		MinimapIcon 1 Red Triangle
-	Show
-		Class Maps
-		BlightedMap True
-		MapTier >= 6
-		SetTextColor 230 230 230          
-		SetBorderColor 255 190 0 255           
-		SetBackgroundColor 200 123 18 255
 		SetFontSize 38
-		PlayAlertSound 4 300
-		PlayEffect Yellow Temp
-		MinimapIcon 1 Yellow Triangle
-	Show
-		Class Maps
-		BlightedMap True
-		MapTier <= 6
-		SetTextColor 230 230 230          
-		SetBorderColor 255 190 0 255
-		SetBackgroundColor 66 34 200 255
-		SetFontSize 34
-		PlayAlertSound 4 300
-		PlayEffect White Temp
-		MinimapIcon 2 White Triangle
-
+		
 #========================================================================================================================================================
 # [0001] 6-Linked
 #========================================================================================================================================================
@@ -249,7 +220,7 @@
 		ShaperItem True
 		ItemLevel >= 82
 		Rarity <= Rare
-		BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Rin" "Cerulean Rin" "Convoking Wand"
+		BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring" "Cerulean Ring" "Convoking Wand"
 		SetBackgroundColor 255 255 255 255
 		SetTextColor 66 66 0 255
 		SetBorderColor 66 66 0 255
@@ -260,7 +231,7 @@
 	Show
 		ShaperItem True
 		Rarity <= Rare		
-		BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Rin" "Cerulean Rin" "Convoking Wand"
+		BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring" "Cerulean Ring" "Convoking Wand"
 		SetBackgroundColor 255 255 255 255
 		SetTextColor 66 66 0 255
 		SetBorderColor 66 66 0 255
@@ -489,7 +460,7 @@
 		ShaperItem True
 		ItemLevel >= 82
 		Rarity <= Rare
-		BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Rin" "Cerulean Rin" "Convoking Wand"
+		BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring" "Cerulean Ring" "Convoking Wand"
 		SetBackgroundColor 255 255 255 255
 		SetTextColor 66 66 0 255
 		SetBorderColor 66 66 0 255
@@ -500,7 +471,7 @@
 	Show
 		ShaperItem True
 		Rarity <= Rare		
-		BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Rin" "Cerulean Rin" "Convoking Wand"
+		BaseType "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring" "Cerulean Ring" "Convoking Wand"
 		SetBackgroundColor 255 255 255 255
 		SetTextColor 66 66 0 255
 		SetBorderColor 66 66 0 255
@@ -799,7 +770,7 @@
 	Show 
 		ItemLevel >= 86
 		Rarity <= Rare
-		BaseType "Steel Ring" "Opal Ring" "Vermillion Rin" "Cerulean Rin" "Convoking Wand"
+		BaseType "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring"
 		SetBorderColor 255 125 0 255 
 		SetTextColor 255 125 0 255 
 		SetBackgroundColor 255 255 255 255
@@ -808,7 +779,7 @@
 		MinimapIcon 0 Red Diamond
 	Show 
 		Rarity <= Rare
-		BaseType "Steel Ring" "Opal Ring" "Vermillion Rin" "Cerulean Rin" "Convoking Wand"	
+		BaseType "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring"
 		SetBorderColor 255 255 255 255
 		SetTextColor 255 255 255 255
 		SetBackgroundColor 86 0 0 255
@@ -857,7 +828,7 @@
 	Show
 		ItemLevel >= 86
 		Rarity <= Rare
-		BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" 	
+		BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Convoking Wand"
 		SetTextColor 255 125 0              
 		SetBorderColor 255 125 0 255        
 		SetBackgroundColor 35 100 20 255
@@ -867,7 +838,7 @@
 	Show 
 		ItemLevel >= 84
 		Rarity = Rare
-		BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" 		
+		BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Convoking Wand"		
 		SetBorderColor 255 125 0 255
 		SetBackgroundColor 35 100 20 255
 		SetFontSize 38
@@ -876,13 +847,13 @@
 	Show
 		ItemLevel >= 75 
 		Rarity = Rare
-		BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+		BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Convoking Wand"
 		SetBorderColor 255 125 0 255
 		SetBackgroundColor 10 60 25 255
 		SetFontSize 38
 	Show 
 		Rarity <= Rare
-		BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+		BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Convoking Wand"
 		SetBorderColor 255 125 0 255
 		SetFontSize 38            
 
@@ -1368,7 +1339,7 @@
 	#	SetFontSize 32	
 
 #========================================================================================================================================================
-# [0014] HIDE LAYER - 65+ Weapon、Armor、Assestory
+# [0014] HIDE LAYER - 65+ Weapon, Armor, Assestory
 #========================================================================================================================================================
 	Hide
 		ItemLevel >= 65
@@ -1411,7 +1382,7 @@
 		MinimapIcon 1 Red Circle
 	Show
 		Class Currency
-		BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant"
+		BaseType "Awakened Sextant" "Prime Sextant"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 125 0 255
@@ -1421,7 +1392,7 @@
 		MinimapIcon 1 Red Circle
 	Show 
 		Class Currency
-		BaseType "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb"
+		BaseType "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Awakener's Orb"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 190 0 255
@@ -1431,7 +1402,7 @@
 		MinimapIcon 1 Yellow Circle
 	Show 
 		Class Currency
-		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Apprentice Cartographer's Sextant" "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" 
+		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Simple Sextant" "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 213 159 0 255
@@ -1473,18 +1444,18 @@
 		SetTextColor 220 220 220 255 		
 		SetBorderColor 200 50 30 255 
 		SetFontSize 38
-	Hide 
+	Show 
 		Class Currency
 		BaseType "Portal Scroll"
 		SetTextColor 220 220 220 255  
 		SetBorderColor 30 50 200 255
 		SetFontSize 34
-	Hide
+	Show
 		Class Currency
 		BaseType "Scroll of Wisdom"
 		SetTextColor 220 220 220 255 		
 		SetBorderColor 200 50 30 255 
-		SetFontSize 34      
+		SetFontSize 34
 		             
 #------------------------------------------------------------------------
 # [0015-2] Shards
@@ -1713,6 +1684,56 @@
 		PlayAlertSound 2 300                
 		MinimapIcon 1 White Circle
 
+	#---------------------------------
+	# Blight
+	#---------------------------------
+	Show  
+		Class Currency
+		BaseType "Golden Oil" "Silver Oil"
+		SetTextColor 255 255 255 255  
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 255 0 0 255        
+		SetFontSize 45
+		PlayAlertSound 6 300
+		MinimapIcon 0 Red Circle
+	Show
+		Class Currency
+		BaseType "Opalescent Oil" "Black Oil"
+		SetTextColor 255 255 255 255  
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 255 125 0 255
+		PlayAlertSound 1 300
+		SetFontSize 42       
+		DisableDropSound True
+		MinimapIcon 1 Red Circle
+	Show
+		Class Currency
+		BaseType "Crimson Oil" "Violet Oil" "Azure Oil"
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 255 125 0 255
+		PlayAlertSound 2 300
+		SetFontSize 42
+		DisableDropSound True
+		MinimapIcon 1 Red Circle
+	Show 
+		Class Currency
+		BaseType "Teal Oil" "Verdant Oil"
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 255 190 0 255
+		SetFontSize 42
+		DisableDropSound True
+		MinimapIcon 1 Yellow Circle
+	Show
+		Class Currency 
+		BaseType "Oil" 
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 240 200 200 255
+		DisableDropSound True
+		SetFontSize 40
+
 #------------------------------------------------------------------------
 # [0015-4] Essence
 #------------------------------------------------------------------------
@@ -1833,7 +1854,7 @@
 		SetFontSize 36
 	Show 
 		Class Divination
-		BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Burning Blood" "House of Mirrors" "Immortal Resolve" "Mawr Blaidd" "Nook's Crown" "Pride Before the Fall" "Pride of the First Ones" "Seven Years Bad Luck" "The Bargain" "The Celestial Stone" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Eye of Terror" "The Fiend" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Life Thief" "The Nurse" "The Price of Loyalty" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Vast" "The Wolven King's Bite" "The World Eater" "Void of the Elements" "Wealth and Power"
+		BaseType "Divine Justice" "Abandoned Wealth" "Alluring Bounty" "Baited Expectations" "Beauty Through Death" "Etched in Blood" "House of Mirrors" "Immortal Resolve" "Mawr Blaidd" "Nook's Crown" "Pride Before the Fall" "Pride of the First Ones" "Seven Years Bad Luck" "Succor of the Sinless" "The Bargain" "The Celestial Stone" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Eye of Terror" "The Fiend" "The Fishmonger" "The Immortal" "The Iron Bard" "The King's Heart" "The Life Thief" "The Nurse" "The Price of Loyalty" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Undisputed" "The Vast" "The Wolven King's Bite" "Void of the Elements" "Wealth and Power"
 		SetTextColor 0 0 255 255             
 		SetBorderColor 0 0 255 255           
 		SetBackgroundColor 255 255 255 255
@@ -1842,7 +1863,7 @@
 		MinimapIcon 0 Blue Square
 	Show 
 		Class Divination
-		BaseType "Azyran's Reward" "Chaotic Disposition" "Hunter's Reward" "The Artist" "The Cartographer" "The Deep Ones" "The Endless Darkness" "The Enlightened" "The Gladiator" "The Hoarder" "The Landing" "The Mayor" "The Old Man" "The Professor" "The Risk" "The Sephirot" "The Undisputed" "The Void"
+		BaseType "Azyran's Reward" "Burning Blood" "Chaotic Disposition" "Dark Dreams" "Hunter's Reward" "Perfection" "Squandered Prosperity" "The Artist" "The Cartographer" "The Enlightened" "The Escape" "The Gladiator" "The Hale Heart" "The Hoarder" "The Landing" "The Mayor" "The Offering" "The Old Man" "The Professor" "The Risk" "The Sephirot" "The Void"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 255 255 0 255         
 		SetBackgroundColor 100 250 250 245
@@ -1851,7 +1872,7 @@
 		MinimapIcon 1 Blue Square  
 	Show 
 		Class Divination
-		BaseType "Akil's Prophecy" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Dark Dreams" "Earth Drinker" "Emperor of Purity" "Heterochromia" "Humility" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Monochrome" "No Traces" "Perfection" "Sambodhi's Vow" "The Beast" "The Breach" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Encroaching Darkness" "The Ethereal" "The Formless Sea" "The Hale Heart" "The Hunger" "The Innocent" "The Inventor" "The Jeweller's Boon" "The Journey" "The Master" "The Polymath" "The Porcupine" "The Primordial" "The Sacrifice" "The Scavenger" "The Seeker" "The Side Quest" "The Survivalist" "The Thaumaturgist" "The Throne" "The Undaunted" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The Wretched" "Time-Lost Relic" "Vanity"
+		BaseType "A Dab of Ink" "Akil's Prophecy" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Deathly Designs" "Earth Drinker" "Emperor of Purity" "Friendship" "Heterochromia" "Humility" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Monochrome" "No Traces" "Sambodhi's Vow" "The Beast" "The Breach" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Dark Mage" "The Deep Ones" "The Dreamer" "The Encroaching Darkness" "The Endless Darkness" "The Ethereal" "The Formless Sea" "The Hunger" "The Innocent" "The Inventor" "The Jeweller's Boon" "The Journey" "The Last One Standing" "The Master" "The Polymath" "The Porcupine" "The Primordial" "The Sacrifice" "The Scavenger" "The Seeker" "The Side Quest" "The Survivalist" "The Thaumaturgist" "The Throne" "The Undaunted" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The World Eater" "The Wretched" "Time-Lost Relic" "Underground Forest" "Vanity"
 		SetTextColor 0 0 0 255              
 		SetBorderColor 0 0 255 255          
 		SetBackgroundColor 50 220 240 235
@@ -1860,7 +1881,7 @@
 		MinimapIcon 2 Blue Square
 	Hide 
 		Class Divination
-		BaseType "A Mother's Parting Gift" "Anarchy's Price" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Grave Knowledge" "Lantador's Lost Love" "Might is Right" "Rain of Chaos" "Rats" "Shard of Fate" "Struck by Lightning" "The Archmage's Right Hand" "The Army of Blood" "The Carrion Crow" "The Endurance" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Opulent" "The Rabid Rhoa" "The Scarred Meadow" "The Sigil" "The Skeleton" "The Summoner" "The Surgeon" "The Sword King's Salute" "The Warden" "The Watcher" "The Witch" "Thirst for Knowledge" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Volatile Power"
+		BaseType "The Craving" "A Mother's Parting Gift" "Anarchy's Price" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Grave Knowledge" "Lantador's Lost Love" "Might is Right" "Rain of Chaos" "Rats" "Shard of Fate" "Struck by Lightning" "The Archmage's Right Hand" "The Army of Blood" "The Carrion Crow" "The Endurance" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Opulent" "The Rabid Rhoa" "The Scarred Meadow" "The Sigil" "The Skeleton" "The Summoner" "The Surgeon" "The Sword King's Salute" "The Warden" "The Watcher" "The Witch" "Thirst for Knowledge" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Volatile Power"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0                 
 		SetBackgroundColor 175 215 230 180 
@@ -1874,6 +1895,15 @@
 #========================================================================================================================================================
 # [0018] Skill Gems
 #========================================================================================================================================================
+	Show
+		Class Gem
+		BaseType "Awakened"
+		SetTextColor 30 200 200 255
+		SetBorderColor 30 150 180 255
+		SetBackgroundColor 255 255 255 255
+		PlayAlertSound 6 300
+		PlayEffect Red
+		MinimapIcon 0 Green Hexagon
 	Show
 		Class Gem
 		BaseType "Empower" "Enlighten"
@@ -1922,7 +1952,85 @@
 	#	PlayEffect Green
 
 #------------------------------------------------------------------------
-# [0019-2] T16 Maps
+# [0019-2] Influenced Map Drop
+#------------------------------------------------------------------------
+
+	#---------------------------------
+	# Blight Influence
+	#---------------------------------
+	Show
+		Class Maps
+		BlightedMap True
+		MapTier >= 11
+		SetTextColor 230 230 230    
+		SetBorderColor 255 190 0 255
+		SetBackgroundColor 180 51 36 255
+		SetFontSize 40
+		PlayAlertSound 5 300
+		PlayEffect Red
+		MinimapIcon 1 Red Triangle
+	Show
+		Class Maps
+		BlightedMap True
+		MapTier >= 6
+		SetTextColor 230 230 230          
+		SetBorderColor 255 190 0 255           
+		SetBackgroundColor 200 123 18 255
+		SetFontSize 38
+		PlayAlertSound 4 300
+		PlayEffect Yellow Temp
+		MinimapIcon 1 Yellow Triangle
+	Show
+		Class Maps
+		BlightedMap True
+		MapTier <= 6
+		SetTextColor 230 230 230          
+		SetBorderColor 255 190 0 255
+		SetBackgroundColor 66 34 200 255
+		SetFontSize 34
+		PlayAlertSound 4 300
+		PlayEffect White Temp
+		MinimapIcon 2 White Triangle
+
+	#---------------------------------
+	# Shaper/Elder Influence
+	#---------------------------------
+	Show
+		Class Maps
+		HasInfluence Shaper Elder
+		MapTier >= 11
+		SetBackgroundColor 66 66 0 255
+		SetTextColor 255 255 255 255
+		SetBorderColor 255 255 255 255
+		SetFontSize 42
+		PlayAlertSound 5 300
+		PlayEffect Red
+		MinimapIcon 1 Red Triangle
+	Show
+		Class Maps
+		HasInfluence Shaper Elder
+		MapTier >= 6
+		SetBackgroundColor 66 66 0 255
+		SetTextColor 255 255 255 255
+		SetBorderColor 255 255 255 255
+		SetFontSize 38
+		PlayAlertSound 4 300
+		PlayEffect Yellow Temp
+		MinimapIcon 1 Yellow Triangle
+	Show
+		Class Maps
+		HasInfluence Shaper Elder
+		MapTier <= 6
+		SetBackgroundColor 66 66 0 255
+		SetTextColor 255 255 255 255
+		SetBorderColor 255 255 255 255
+		SetFontSize 34
+		PlayAlertSound 4 300
+		PlayEffect White Temp
+		MinimapIcon 2 White Triangle
+
+#------------------------------------------------------------------------
+# [0019-3] T16 Maps
 #------------------------------------------------------------------------
 	Show 
 		Class Maps
@@ -1936,7 +2044,7 @@
 		MinimapIcon 0 Brown Triangle
 
 #------------------------------------------------------------------------
-# [0019-3] T11 - T15 Maps (Shaped Included)
+# [0019-4] T11 - T15 Maps (Shaped Included)
 #------------------------------------------------------------------------	
 	Show 
 		Class Maps
@@ -1950,7 +2058,7 @@
 		MinimapIcon 1 Red Triangle
 
 #------------------------------------------------------------------------
-# [0019-4] T6 - T10 Maps (Shaped Included)
+# [0019-5] T6 - T10 Maps (Shaped Included)
 #------------------------------------------------------------------------	
 	#---------------------------------
 	# Show out of level rage maps
@@ -2010,7 +2118,7 @@
 		MinimapIcon 1 Yellow Triangle
 
 #------------------------------------------------------------------------
-# [0019-5] T1 - T5 Maps
+# [0019-6] T1 - T5 Maps
 #------------------------------------------------------------------------
 	#---------------------------------
 	# Show out of level rage maps
@@ -2070,8 +2178,16 @@
 		MinimapIcon 2 White Triangle	
 
 #------------------------------------------------------------------------
-# [0019-6] Map Misc Items
+# [0019-7] Map Misc Items
 #------------------------------------------------------------------------
+	Show 
+		Class "Map Fragments"
+		BaseType "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
+		SetTextColor 0 0 0 255               
+		SetBorderColor 0 0 0 255             
+		SetBackgroundColor 255 255 255 255
+		SetFontSize 40
+		PlayAlertSound 2 300
 	Show 
 		Class "Map Fragments"
 		BaseType "Mortal Hope" "Mortal Ignorance"		
@@ -2083,9 +2199,9 @@
 	Show
 		Class "Map Fragment"
 		BaseType "Gilded"
-		SetTextColor 255 255 255 255
-		SetBorderColor 255 255 255 255
-		SetBackgroundColor 200 0 200 255
+		SetTextColor 200 0 200 255
+		SetBorderColor 200 0 200 255
+		SetBackgroundColor 255 255 255 255
 		SetFontSize 42
 		PlayAlertSound 2 300
 		MinimapIcon 0 Green Hexagon
@@ -2129,7 +2245,7 @@
 		DisableDropSound  True
 
 #========================================================================================================================================================
-# [0020] Labyrinth 、 Quest Items and Shaper Orbs
+# [0020] Labyrinth ,  Quest Items and Shaper Orbs
 #========================================================================================================================================================
 	
 #------------------------------------------------------------------------
@@ -2163,11 +2279,15 @@
 		SetBorderColor 74 230 58 
 
 #------------------------------------------------------------------------
-# [0020-3] Shaper Orbs
+# [0020-3] Atlas Region Upgrade Item
 #------------------------------------------------------------------------	
-	Show 
-		Class Quest
-		BaseType "Shaper's Orb" "Elder's Orb"
+	#Show 
+	#	Class Quest
+	#	BaseType "Shaper's Orb" "Elder's Orb"
+	#	SetFontSize 42
+	#	SetBorderColor 74 230 58
+	Show
+		BaseType "Ivory Watchstone" 
 		SetFontSize 42
 		SetBorderColor 74 230 58
 
