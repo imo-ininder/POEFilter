@@ -121,7 +121,7 @@
 ####	[L001-3] Leveling Mana Flasks
 ####	[L001-4] Leveling Hybrid Flasks
 ####	[L001-5] Leveling Utility Flasks
-####[L002] Leveling Filter
+#### [L002] Leveling Filter
 ####	[L002-1] Hiding Rule
 ####	[L002-2] 4 Link Gears
 ####	[L002-3] 3 Link Gears
@@ -135,33 +135,9 @@
 #========================================================================================================================================================
 # [0000] Special Block for New League Content
 #========================================================================================================================================================
-	Show
-		Class "Metamorph Sample"
-		SetFontSize 42
-		SetBorderColor 74 230 58	
-	Show
-		Class Currency
-		BaseType "Prismatic Catalyst" "Fertile Catalyst" "Tempering Catalyst"
-		SetTextColor 255 255 255 255  
-		SetBorderColor 255 255 255 255
-		SetBackgroundColor 255 125 0 255
-		PlayAlertSound 1 300
-		SetFontSize 40       
-		DisableDropSound True
-		MinimapIcon 1 White Circle
-	Show
-		Class Currency
-		BaseType "Catalyst"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 125 0 255
-		PlayAlertSound 2 300
-		SetFontSize 38
-		DisableDropSound True
-		MinimapIcon 1 White Circle
 
 #========================================================================================================================================================
-# [0001] 6-Linked & Tabula Rasa
+# [0001] 6-Linked
 #========================================================================================================================================================
 	Show
 		LinkedSockets 6
@@ -179,7 +155,7 @@
 		SetBorderColor 255 0 0 255   
 		SetFontSize 42  
 		PlayAlertSound 1 300
-		MinimapIcon 0 Red Diamond
+		MinimapIcon 1 Red Diamond
 	Show
 		SocketGroup WWWWWW
 		SetTextColor 175 96 37 255          
@@ -189,6 +165,7 @@
 		PlayAlertSound 6 300
 		MinimapIcon 0 Red Diamond
 		PlayEffect Brown
+	
 
 #========================================================================================================================================================
 # [0002] 6-Sockets & 5-Linked Items
@@ -212,6 +189,7 @@
 # [0003] RGB recipe
 #========================================================================================================================================================
 	Show
+		#ItemLevel < 75
 		SocketGroup RGB
 		Width <= 2
 		Height <= 2
@@ -219,6 +197,7 @@
 		SetFontSize 36
 		SetBorderColor 0 0 255
 	Show 
+		#ItemLevel < 75
 		SocketGroup RGB
 		Width <= 1
 		Height <= 3
@@ -1546,18 +1525,18 @@ Show
 		SetFontSize 42       
 		DisableDropSound True
 		MinimapIcon 1 Red Circle
-	Show
-		Class Currency
-		BaseType "Awakened Sextant" "Prime Sextant"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 125 0 255
-		PlayAlertSound 2 300
-		SetFontSize 42
-		MinimapIcon 1 Red Circle
+	#Show
+	#	Class Currency
+	#	BaseType 
+	#	SetTextColor 0 0 0 255
+	#	SetBorderColor 0 0 0 255
+	#	SetBackgroundColor 255 125 0 255
+	#	PlayAlertSound 2 300
+	#	SetFontSize 42
+	#	MinimapIcon 1 Red Circle
 	Show 
 		Class Currency
-		BaseType "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb"
+		BaseType "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Awakened Sextant"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 190 0 255
@@ -1566,7 +1545,7 @@ Show
 		MinimapIcon 1 Yellow Circle
 	Show 
 		Class Currency
-		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Simple Sextant" "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" 
+		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Prime Sextant"  "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" 
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 213 159 0 255
@@ -1575,24 +1554,33 @@ Show
 		MinimapIcon 1 White Circle
 	Show
 		Class Currency 
-		BaseType "Blessed Orb" "Jeweller's Orb" "Bestiary Orb" "Orb of Binding" "Engineer's Orb" "Glassblower's Bauble" 
+		BaseType  "Blessed Orb" "Jeweller's Orb" "Bestiary Orb" "Engineer's Orb" "Simple Sextant"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 240 200 200 255
 		SetFontSize 40
 	Show
 		Class Currency
-		BaseType "Blacksmith's" "Chromatic Orb" "Orb of Transmutation" "Orb of Alteration" "Orb of Chance"
+		BaseType "Orb of Chance" "Orb of Alteration" 
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 240 200 200 255
+		PlayAlertSound 2 300
+		SetFontSize 40
+	Show
+		Class Currency
+		BaseType "Chromatic Orb" "Glassblower's Bauble" "Blacksmith's"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 210 200 150 255
-		PlayAlertSound 9 300
-		SetFontSize 40		 
+		PlayAlertSound 2 300
+		SetFontSize 40
 	Show
 		Class Currency
-		BaseType "Armourer's" "Orb of Augmentation"
+		BaseType "Orb of Transmutation" "Armourer's" "Orb of Augmentation"
 		SetTextColor 240 200 200 255
 		SetBorderColor 240 200 200 255
+		PlayAlertSound 2 300
 		SetFontSize 38
 	Show
 		Class Currency
@@ -1612,13 +1600,13 @@ Show
 		BaseType "Portal Scroll"
 		SetTextColor 220 220 220 255  
 		SetBorderColor 30 50 200 255
-		SetFontSize 38
+		SetFontSize 34
 	Show
 		Class Currency
 		BaseType "Scroll of Wisdom"
 		SetTextColor 220 220 220 255 		
 		SetBorderColor 200 50 30 255 
-		SetFontSize 38      
+		SetFontSize 34
 		             
 #------------------------------------------------------------------------
 # [0015-2] Shards
@@ -1752,7 +1740,7 @@ Show
 		BaseType "Perandus Coin"
 		SetTextColor 255 178 135 255         
 		SetBorderColor 255 178 135 135
-		SetFontSize 35
+		SetFontSize 36
 
 	#---------------------------------
 	# Incursion
@@ -1763,7 +1751,7 @@ Show
 		SetTextColor 0 240 190 255
 		SetBackgroundColor 255 0 0 239
 		SetBorderColor 0 240 190 255
-		SetFontSize 42
+		SetFontSize 45
 		PlayAlertSound 6 300
 	Show
 		Class Currency
@@ -1809,7 +1797,7 @@ Show
 		SetBorderColor 0 0 0 255 255
 		SetBackgroundColor 0 169 255 255         
 		SetFontSize 42
-		PlayAlertSound 6 300
+		PlayAlertSound 1 300
 		MinimapIcon 1 Red Circle
 	Show
 		Class Currency
@@ -1846,7 +1834,7 @@ Show
 	Show 
 		Class Currency
 		BaseType "Gilded Fossil" "Sanctified Fossil" "Tangled Fossil" "Glyphic Fossil" "Serrated Fossil" "Perfect Fossil"
-		SetFontSize 45
+		SetFontSize 42
 		SetTextColor 255 255 255 255     
 		SetBorderColor 255 255 255 255   
 		SetBackgroundColor 240 90 35 255 
@@ -1855,7 +1843,7 @@ Show
 	Show
 		Class Currency
 		BaseType "Enchanted Fossil" "Prismatic Fossil" "Shuddering Fossil" "Pristine Fossil"
-		SetFontSize 45
+		SetFontSize 42
 		SetTextColor 0 0 0 255              
 		SetBorderColor 0 0 0                
 		SetBackgroundColor 213 159 0 255    
@@ -1863,12 +1851,12 @@ Show
 		MinimapIcon 2 Yellow Circle
 	Show 
 		Class Currency
-		BaseType "Fossil"
-		SetFontSize 45
+		BaseType "Fossil"		
 		SetTextColor 0 0 0 255              
 		SetBorderColor 0 0 0 255            
 		SetBackgroundColor 249 150 25 255   
-		PlayAlertSound 2 300                
+		PlayAlertSound 2 300
+		SetFontSize 38              
 		MinimapIcon 1 White Circle
 
 	#---------------------------------
@@ -1898,20 +1886,19 @@ Show
 		BaseType "Crimson Oil" "Violet Oil" "Azure Oil"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 125 0 255
-		PlayAlertSound 2 300
-		SetFontSize 42
+		SetBackgroundColor 255 190 0 255
+		SetFontSize 38
 		DisableDropSound True
-		MinimapIcon 1 Red Circle
+		MinimapIcon 1 Yellow Circle
 	Show 
 		Class Currency
 		BaseType "Teal Oil" "Verdant Oil"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 190 0 255
-		SetFontSize 42
+		SetBackgroundColor 213 159 0 255
+		SetFontSize 38
 		DisableDropSound True
-		MinimapIcon 1 Yellow Circle
+		MinimapIcon 1 White Circle
 	Show
 		Class Currency 
 		BaseType "Oil" 
@@ -1919,7 +1906,31 @@ Show
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 240 200 200 255
 		DisableDropSound True
-		SetFontSize 40
+		SetFontSize 36
+
+	#---------------------------------
+	# Metamorph
+	#---------------------------------
+	Show
+		Class Currency
+		BaseType "Prismatic Catalyst" "Fertile Catalyst" "Tempering Catalyst"
+		SetTextColor 255 255 255 255  
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 255 125 0 255
+		PlayAlertSound 1 300
+		SetFontSize 40       
+		DisableDropSound True
+		MinimapIcon 1 White Circle
+	Show
+		Class Currency
+		BaseType "Catalyst"
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 255 125 0 255
+		PlayAlertSound 2 300
+		SetFontSize 38
+		DisableDropSound True
+		MinimapIcon 1 White Circle
 
 #------------------------------------------------------------------------
 # [0015-4] Essence
@@ -2039,6 +2050,10 @@ Show
 	# Unique Catching Layer
 	#------------------------------------------------------------------------
 	Show
+		Class "Metamorph Sample"
+		SetFontSize 42
+		SetBorderColor 74 230 58
+	Show
 		Rarity Unique
 		SetBorderColor 175 96 37 255
 		SetFontSize 38
@@ -2047,6 +2062,13 @@ Show
 #========================================================================================================================================================
 # [0017] Divination Cards
 #========================================================================================================================================================
+	Show #Divination-Exception
+		Class Divination
+		BaseType "The Wolf's Shadow" "The Master Artisan"
+		SetTextColor 0 0 0 255               
+		SetBorderColor 0 100 150 255         
+		SetBackgroundColor 145 215 230 225
+		SetFontSize 36
 
 	#------------------------------------------------------------------------
 	# Tier 1 Divination Cards
@@ -2116,6 +2138,7 @@ Show
 		SetTextColor 30 200 200 255
 		SetBorderColor 30 150 180 255
 		SetBackgroundColor 255 255 255 255
+		SetFontSize 40
 		PlayAlertSound 6 300
 		PlayEffect Red
 		MinimapIcon 0 Green Hexagon
@@ -2140,12 +2163,12 @@ Show
 		SetBorderColor 30 200 200
 		SetFontSize 40
 		PlayAlertSound 2 300		
-	Show		
+	Show
 		Class Gem
 		Quality > 0		
 		SetBorderColor 30 200 200
 		SetFontSize 36
-	Show 
+	Show
 		Class Gem
 		SetFontSize 36          
 
@@ -2833,8 +2856,8 @@ Show
 		BaseType "Quicksilver"		
 		SetBackgroundColor 25 100 75
 		SetBorderColor 50 200 125 255
-		SetFontSize 38
-		PlayAlertSound 2 300
+		SetFontSize 42
+		PlayAlertSound 1 300
 	Show
 		ItemLevel <= 65
 		Class "Utility Flask"		
@@ -2862,9 +2885,9 @@ Show
 		Class "Gloves" "Boots" "Helmets" "Body Armour"
 		SocketGroup GGG
 		SetBorderColor 255 0 255 255
-		SetFontSize 45
-		PlayAlertSound 5 300
-		MinimapIcon 0 Blue Hexagon
+		SetFontSize 42
+		PlayAlertSound 1 300
+		MinimapIcon 1 Blue Hexagon
 	Show
 		LinkedSockets = 4
 		ItemLevel <= 65
@@ -2873,7 +2896,7 @@ Show
 		SocketGroup GGB GGG
 		SetBorderColor 255 0 255 255
 		SetFontSize 36
-		PlayAlertSound 5 300
+		PlayAlertSound 1 300
 		MinimapIcon 2 Blue Hexagon
 	#Show
 	#	LinkedSockets = 4
@@ -2882,9 +2905,9 @@ Show
 	#	Class "Gloves" "Boots" "Helmets" "Body Armour"
 	#	SocketGroup BBB
 	#	SetBorderColor 255 0 255 255
-	#	SetFontSize 45
-	#	PlayAlertSound 5 300
-	#	MinimapIcon 0 Blue Hexagon
+	#	SetFontSize 42
+	#	PlayAlertSound 1 300
+	#	MinimapIcon 1 Blue Hexagon
 	#Show
 	#	LinkedSockets = 4
 	#	ItemLevel <= 65
@@ -2893,7 +2916,7 @@ Show
 	#	SocketGroup BBB BBG
 	#	SetBorderColor 255 0 255 255
 	#	SetFontSize 36
-	#	PlayAlertSound 5 300
+	#	PlayAlertSound 1 300
 	#	MinimapIcon 2 Blue Hexagon
 
 #------------------------------------------------------------------------
@@ -2906,18 +2929,17 @@ Show
 		Rarity Rare
 		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
 		SocketGroup GGG
-		SetBorderColor 255 0 255 255
+		SetBorderColor 0 0 255 255
 		SetFontSize 38
 	Show
 		LinkedSockets = 3
 		ItemLevel <= 12
 		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
 		SocketGroup GGB GGG
-		SetBorderColor 255 0 255 255
-		SetBackgroundColor 105 34 105 255
+		SetBorderColor 0 0 255 255		
 		SetFontSize 40
-		PlayAlertSound 5 300
-		MinimapIcon 0 Blue Hexagon
+		PlayAlertSound 2 300
+		MinimapIcon 1 Blue Hexagon
 	#Show
 	#	LinkedSockets = 3
 	#	ItemLevel <= 65	
@@ -2925,18 +2947,17 @@ Show
 	#	Rarity Rare
 	#	Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
 	#	SocketGroup BBB BBG #BGG GGG
-	#	SetBorderColor 255 0 255 255
+	#	SetBorderColor 0 0 255 255
 	#	SetFontSize 38
 	#Show
 	#	LinkedSockets = 3
 	#	ItemLevel <= 12
 	#	Class "Sceptres" "Wands" "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
 	#	SocketGroup BG
-	#	SetBorderColor 255 0 255 255
-	#	SetBackgroundColor 105 34 105 255
+	#	SetBorderColor 0 0 255 255
 	#	SetFontSize 40
-	#	PlayAlertSound 5 300
-	#	MinimapIcon 0 Blue Hexagon
+	#	PlayAlertSound 2 300
+	#	MinimapIcon 1 Blue Hexagon
 
 #------------------------------------------------------------------------
 # [L002-4] Attack Weapon (A1 - A9)
@@ -2948,8 +2969,8 @@ Show
 		BaseType "Ranger Bow" "Steelwood Bow" "Thicket Bow" #"Gladius" "Vaal Greatsword" "Headman's Sword"  "Eye Gouger" "Throat Stabber" "Twin Claw" #"Gutting Knife" "Trisula" "Ambusher" "Dragon Mace" "Tenderizer" "Legion Hammer" "Pernarch" "Butcher Axe" "Siege Axe" "Engraved Hatchet" "Vaal Axe" "Corsair Sword" "Foul Staff" "Ezomyte Staff" "Maelström Staff"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255          
-		SetFontSize 45
-		PlayAlertSound 2 300
+		SetFontSize 42
+		PlayAlertSound 1 300
 		MinimapIcon 0 Green Hexagon
 	Show #A6 & A7
 		ItemLevel >= 44
@@ -2958,8 +2979,8 @@ Show
 		BaseType "Highborn Bow" "Decimation Bow" #"Phantom Mace" "Battle Hammer" "Wraith Axe" "Chest Splitter" "War Axe" "Labrys" "Graceful Sword" "Twilight Blade" "Wraith Sword" "Tiger Sword"  "Noble Claw" "Gut Ripper" "Military Staff" "Serpentine Staff"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255          
-		SetFontSize 45
-		PlayAlertSound 2 300
+		SetFontSize 42
+		PlayAlertSound 1 300
 		MinimapIcon 0 Green Hexagon
 	Show #A4 & A5
 		ItemLevel >= 34
@@ -2968,8 +2989,8 @@ Show
 		BaseType "Compound Bow" "Reflex Bow" "Grove Bow" #"Barbed Club" "Wyrm Mace" "Tomahawk" "Etched Hatchet" "Jasper Chopper" "Cutlass" "Variscite Blade" "Butcher Sword" "Gouger" "Double law" "Fright Claw" "Poignard" "Flaying Knife" "Prong Dagger"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
-		SetFontSize 45
-		PlayAlertSound 2 300
+		SetFontSize 42
+		PlayAlertSound 1 300
 		MinimapIcon 0 Green Hexagon
 	Show #A3
 		ItemLevel >= 24
@@ -2978,8 +2999,8 @@ Show
 		BaseType "Royal Bow" #"Sparkling Claw" "Vile Staff" Coiled Staff" "Dream Mace" "Bladed Mace" "Spectral Axe" "Arming Axe" "Shadow Axe" "Double Axe" "Elegant Sword" "Dusk Blade" "Spectral Sword"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
-		SetFontSize 45
-		PlayAlertSound 2 300
+		SetFontSize 42
+		PlayAlertSound 1 300
 		MinimapIcon 0 Green Hexagon
 	Show #A2 & A1 Rare
 		ItemLevel < 24
@@ -2987,8 +3008,8 @@ Show
 		Class "Bows" #"Two Hand" "One Hand" "Staves" "Claws" "Daggers"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
-		SetFontSize 45
-		PlayAlertSound 2 300
+		SetFontSize 42
+		PlayAlertSound 1 300
 		MinimapIcon 0 Green Hexagon
 	Show #A3 Magic		
 		ItemLevel >= 24
@@ -2998,7 +3019,7 @@ Show
 		SetTextColor 25 95 235 255
 		SetBorderColor 255 170 0 255      
 		SetFontSize 38
-		PlayAlertSound 9 300
+		PlayAlertSound 2 300
 		MinimapIcon 2 White Hexagon
 	Show #A2 Magic
 		ItemLevel < 24
@@ -3008,7 +3029,7 @@ Show
 		SetTextColor 25 95 235 255
 		SetBorderColor 255 170 0 255      
 		SetFontSize 38
-		PlayAlertSound 9 300
+		PlayAlertSound 2 300
 		MinimapIcon 2 White Hexagon
 	Show #A1 Magic
 		ItemLevel < 13
@@ -3017,7 +3038,7 @@ Show
 		SetTextColor 25 95 235 255
 		SetBorderColor 255 170 0 255      
 		SetFontSize 38
-		PlayAlertSound 9 300
+		PlayAlertSound 2 300
 		MinimapIcon 2 White Hexagon
 
 #------------------------------------------------------------------------
@@ -3030,8 +3051,8 @@ Show
 	#	BaseType "Opal Sceptre" "Opal Wand" "Tornado Wand"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255          
-	#	SetFontSize 45
-	#	PlayAlertSound 2 300
+	#	SetFontSize 42
+	#	PlayAlertSound 1 300
 	#	MinimapIcon 0 Green Hexagon
 	#Show #A4 & A5
 	#	ItemLevel >= 41
@@ -3040,8 +3061,8 @@ Show
 	#	BaseType "Crystal Sceptre"  "Abyssal Sceptre" "Imbued Wand" "Demon's Horn" "Omen Wand" "Serpent Wand" "Crystal Wand"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255       
-	#	SetFontSize 45
-	#	PlayAlertSound 2 300
+	#	SetFontSize 42
+	#	PlayAlertSound 1 300
 	#	MinimapIcon 0 Green Hexagon
 	#Show #A3
 	#	ItemLevel >= 24
@@ -3050,8 +3071,8 @@ Show
 	#	BaseType "Shadow Sceptre" "Quartz Sceptre" "Engraved Wand" "Faun's Horn" "Sage Wand" "Spiraled Wand" "Quartz Wand"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255       
-	#	SetFontSize 45
-	#	PlayAlertSound 2 300
+	#	SetFontSize 42
+	#	PlayAlertSound 1 300
 	#	MinimapIcon 0 Green Hexagon
 	#Show #A2 & A1 Rare
 	#	ItemLevel < 24
@@ -3059,8 +3080,8 @@ Show
 	#	Class "Sceptre" "Wand"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255       
-	#	SetFontSize 45
-	#	PlayAlertSound 2 300
+	#	SetFontSize 42
+	#	PlayAlertSound 1 300
 	#	MinimapIcon 0 Green Hexagon
 	#Show #A2 Magic
 	#	ItemLevel < 24
@@ -3070,7 +3091,7 @@ Show
 	#	SetTextColor 25 95 235 255
 	#	SetBorderColor 255 170 0 255      
 	#	SetFontSize 38
-	#	PlayAlertSound 9 300
+	#	PlayAlertSound 2 300
 	#	MinimapIcon 2 White Hexagon
 	#Show #A1 Magic
 	#	ItemLevel < 13
@@ -3079,7 +3100,7 @@ Show
 	#	SetTextColor 25 95 235 255
 	#	SetBorderColor 255 170 0 255      
 	#	SetFontSize 38
-	#	PlayAlertSound 9 300
+	#	PlayAlertSound 2 300
 	#	MinimapIcon 2 White Hexagon
 
 #------------------------------------------------------------------------
@@ -3106,8 +3127,8 @@ Show
 		BaseType "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Leather Belt" "Heavy Belt" "Rustic Sash" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Coral Ring" "Iron Ring" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Penetrating Arrow Quiver"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
-		SetFontSize 45
-		PlayAlertSound 2 300
+		SetFontSize 42
+		PlayAlertSound 1 300
 		MinimapIcon 0 Green Hexagon
 	#Show # Specail for spell weapon craft.
 	#	ItemLevel < 65
@@ -3115,7 +3136,7 @@ Show
 	#	BaseType "Chain Belt"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255       
-	#	SetFontSize 45
+	#	SetFontSize 42
 	#	PlayAlertSound 2 300
 	#	MinimapIcon 0 Green Hexagon
 	Show
@@ -3124,9 +3145,9 @@ Show
 		Class "Amulet" "Belt" "Ring" "Quiver"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
-		SetFontSize 45
+		SetFontSize 42
 		PlayAlertSound 2 300
-		MinimapIcon 0 Green Hexagon
+		MinimapIcon 2 Green Hexagon
 	Show
 		ItemLevel < 24
 		Rarity Magic 
@@ -3134,7 +3155,7 @@ Show
 		SetTextColor 25 95 235 255
 		SetBorderColor 255 170 0 255      
 		SetFontSize 38
-		PlayAlertSound 9 300
+		PlayAlertSound 2 300
 	Show
 		ItemLevel < 65
 		Rarity Rare
@@ -3146,16 +3167,16 @@ Show
 		Rarity Rare
 		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"	
 		SetBorderColor 255 0 255 255
-		SetFontSize 42
+		SetFontSize 38
 	Show
 		ItemLevel <= 12
 		Rarity Rare
 		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
-		SetFontSize 45
+		SetFontSize 42
 		PlayAlertSound 2 300
-		MinimapIcon 0 Green Hexagon	
+		MinimapIcon 2 Green Hexagon	
 
 #------------------------------------------------------------------------
 # [L002-8] Act 1 Specific 

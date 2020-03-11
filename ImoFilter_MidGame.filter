@@ -121,35 +121,20 @@
 ####	[L001-3] Leveling Mana Flasks
 ####	[L001-4] Leveling Hybrid Flasks
 ####	[L001-5] Leveling Utility Flasks
+#### [L002] Leveling Filter
+####	[L002-1] Hiding Rule
+####	[L002-2] 4 Link Gears
+####	[L002-3] 3 Link Gears
+####	[L002-4] Attack Weapon (A1 - A9)
+#### 	[L002-5] Rare Spell Weapon (A1 - A9)
+####	[L002-6] Rare Weapon Catching Layer
+####	[L002-7] Asscessory & Amours (A1 - A9)
+####	[L002-8] Act 1 Specific 
 #### [HIDE] HIDE EVERYTHING ELSE
 
 #========================================================================================================================================================
 # [0000] Special Block for New League Content
 #========================================================================================================================================================
-	Show
-		Class "Metamorph Sample"
-		SetFontSize 42
-		SetBorderColor 74 230 58
-	Show
-		Class Currency
-		BaseType "Prismatic Catalyst" "Fertile Catalyst" "Tempering Catalyst"
-		SetTextColor 255 255 255 255  
-		SetBorderColor 255 255 255 255
-		SetBackgroundColor 255 125 0 255
-		PlayAlertSound 1 300
-		SetFontSize 40       
-		DisableDropSound True
-		MinimapIcon 1 White Circle
-	Show
-		Class Currency
-		BaseType "Catalyst"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 125 0 255
-		PlayAlertSound 2 300
-		SetFontSize 38
-		DisableDropSound True
-		MinimapIcon 1 White Circle
 		
 #========================================================================================================================================================
 # [0001] 6-Linked
@@ -157,11 +142,30 @@
 	Show
 		LinkedSockets 6
 		Rarity <= Rare
+		Class "Body Armour"
+		SetTextColor 255 0 0 255
+		SetBorderColor 255 0 0 255
+		SetFontSize 42
+		PlayAlertSound 6 300
+		MinimapIcon 0 Red Diamond
+	Show
+		LinkedSockets 6
+		Rarity <= Rare
 		SetTextColor 255 0 0 255             
 		SetBorderColor 255 0 0 255   
 		SetFontSize 42  
-		PlayAlertSound 6 300
-		MinimapIcon 0 Red Diamond
+		PlayAlertSound 1 300
+		MinimapIcon 1 Red Diamond
+	#Show
+	#	SocketGroup WWWWWW
+	#	SetTextColor 175 96 37 255          
+	#	SetBorderColor 175 96 37 255        
+	#	SetBackgroundColor 255 255 255 255
+	#	SetFontSize 42  
+	#	PlayAlertSound 6 300
+	#	MinimapIcon 0 Red Diamond
+	#	PlayEffect Brown
+		
 
 #========================================================================================================================================================
 # [0002] 6-Sockets & 5-Linked Items
@@ -174,7 +178,7 @@
 	    SetFontSize 40
 	    PlayAlertSound 2 300
 	    MinimapIcon 2 Yellow Diamond
-	Show
+	Hide
 		LinkedSockets 5
 		Rarity < Unique
 		SetBorderColor 0 255 255 
@@ -1521,43 +1525,47 @@ Show
 		SetFontSize 42       
 		DisableDropSound True
 		MinimapIcon 1 Red Circle
-	Show
-		Class Currency
-		BaseType "Awakened Sextant" "Prime Sextant"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 125 0 255
-		PlayAlertSound 2 300
-		SetFontSize 42
-		DisableDropSound True
-		MinimapIcon 1 Red Circle
+	#Show
+	#	Class Currency
+	#	BaseType 
+	#	SetTextColor 0 0 0 255
+	#	SetBorderColor 0 0 0 255
+	#	SetBackgroundColor 255 125 0 255
+	#	PlayAlertSound 2 300
+	#	SetFontSize 42
+	#	MinimapIcon 1 Red Circle
 	Show 
 		Class Currency
-		BaseType "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb"
+		BaseType "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Awakened Sextant"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 190 0 255
 		SetFontSize 42
 		PlayAlertSound 2 300
-		DisableDropSound True
 		MinimapIcon 1 Yellow Circle
 	Show 
 		Class Currency
-		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Cartographer's Chisel" "Simple Sextant" "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb"
+		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Prime Sextant"  "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" 
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 213 159 0 255
 		SetFontSize 40
 		PlayAlertSound 2 300
-		DisableDropSound True
 		MinimapIcon 1 White Circle
 	Show
 		Class Currency 
-		BaseType "Orb of Chance" "Blessed Orb" "Orb of Alteration" "Jeweller's Orb" "Bestiary Orb" "Orb of Binding" "Engineer's Orb"  
+		BaseType  "Blessed Orb" "Jeweller's Orb" "Bestiary Orb" "Engineer's Orb" "Simple Sextant"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 240 200 200 255
-		DisableDropSound True
+		SetFontSize 40
+	Show
+		Class Currency
+		BaseType "Orb of Chance" "Orb of Alteration" 
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 240 200 200 255
+		#PlayAlertSound 2 300
 		SetFontSize 40
 	Show
 		Class Currency 
@@ -1565,18 +1573,20 @@ Show
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 210 200 150 255
-		SetFontSize 40
-	Show
-		Class Currency
-		BaseType "Silver Coin"
-		SetBackgroundColor 100 255 100 255
-		SetBorderColor 0 100 0 240
+		#PlayAlertSound 2 300
 		SetFontSize 40
 	Show
 		Class Currency
 		BaseType "Orb of Transmutation" "Armourer's" "Orb of Augmentation"  
 		SetTextColor 240 200 200 255
 		SetBorderColor 240 200 200 255
+		#PlayAlertSound 2 300
+		SetFontSize 38	
+	Show
+		Class Currency
+		BaseType "Silver Coin"
+		SetBackgroundColor 100 255 100 255
+		SetBorderColor 0 100 0 240
 		SetFontSize 38	
 	Show
 		Class Currency
@@ -1787,7 +1797,7 @@ Show
 		SetBorderColor 0 0 0 255 255
 		SetBackgroundColor 0 169 255 255         
 		SetFontSize 42
-		PlayAlertSound 6 300
+		PlayAlertSound 1 300
 		MinimapIcon 1 Red Circle
 	Show
 		Class Currency
@@ -1955,7 +1965,7 @@ Show
 		SetBackgroundColor 0 125 0
 	    SetBorderColor 0 0 0
 	    SetFontSize 34
-	Show 
+	Hide 
 		Rarity Normal
 		Class Flask
 		Quality = 20
@@ -1975,7 +1985,6 @@ Show
 #========================================================================================================================================================
 # [0016] Unique Items
 #========================================================================================================================================================
-
 	#------------------------------------------------------------------------
 	# Tier 1 Unique
 	#------------------------------------------------------------------------
@@ -2017,6 +2026,10 @@ Show
 	#------------------------------------------------------------------------
 	# Unique Catching Layer
 	#------------------------------------------------------------------------
+	Show
+		Class "Metamorph Sample"
+		SetFontSize 42
+		SetBorderColor 74 230 58
 	Show
 		Rarity Unique
 		SetBorderColor 175 96 37 255
@@ -2134,7 +2147,7 @@ Show
 		SetFontSize 36
 	Hide 
 		Class Gem
-		SetFontSize 32          
+		SetFontSize 36   
 
 #========================================================================================================================================================
 # [0019] Maps & Map Misc Items
@@ -2820,8 +2833,8 @@ Show
 		BaseType "Quicksilver"		
 		SetBackgroundColor 25 100 75
 		SetBorderColor 50 200 125 255
-		SetFontSize 38
-		PlayAlertSound 2 300
+		SetFontSize 42
+		PlayAlertSound 1 300
 	Show
 		ItemLevel <= 65
 		Class "Utility Flask"		
