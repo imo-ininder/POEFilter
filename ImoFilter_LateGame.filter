@@ -910,11 +910,11 @@
 		SetBorderColor 220 0 0 240 
 		SetFontSize 42
 		PlayAlertSound 3 300
-	#Show
-	#	Rarity Rare	
-	#	Class "Abyss Jewel"			
-	#	SetBackgroundColor 0 70 70 255
-	#	SetFontSize 40
+	Show
+		Rarity Rare	
+		Class "Abyss Jewel"			
+		SetBackgroundColor 0 70 70 255
+		SetFontSize 40
 	#Show
 	#	Rarity < Rare
 	#	Class "Abyss Jewel"			
@@ -1166,15 +1166,15 @@
 		PlayAlertSound 2 300                   
 		SetFontSize 42
 		MinimapIcon 2 Blue Diamond
-	#Show 
-	#	ItemLevel >= 86
-	#	Rarity < Rare
-	#	BaseType "Onyx Amulet" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Prismatic" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Titanium Spirit Shield" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia"
-	#	SetTextColor 255 255 255 255           
-	#	SetBorderColor 255 255 255 255
-	#	SetBackgroundColor 20 110 220
-	#	PlayAlertSound 2 300
-	#	SetFontSize 40
+	Show 
+		ItemLevel >= 86
+		Rarity < Rare
+		BaseType "Onyx Amulet" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Prismatic" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Titanium Spirit Shield" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia"
+		SetTextColor 255 255 255 255           
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 20 110 220
+		PlayAlertSound 2 300
+		SetFontSize 40
 	Hide 
 		ItemLevel >= 86
 		Rarity < Rare
@@ -1796,20 +1796,13 @@
 		MinimapIcon 1 Yellow Circle
 	Show 
 		Class Currency
-		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Prime Sextant"  "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" 
+		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Prime Sextant"  "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" "Simple Sextant"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 213 159 0 255
 		SetFontSize 40
 		PlayAlertSound 2 300
 		MinimapIcon 1 White Circle
-	Show
-		Class Currency 
-		BaseType  "Blessed Orb" "Jeweller's Orb" "Bestiary Orb" "Engineer's Orb" "Simple Sextant"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 240 200 200 255
-		SetFontSize 40
 	Show
 		Class Currency
 		BaseType "Orb of Chance" "Orb of Alteration" 
@@ -1818,6 +1811,13 @@
 		SetBackgroundColor 240 200 200 255
 	#	PlayAlertSound 2 300
 		SetFontSize 40
+	Hide
+		Class Currency 
+		BaseType  "Blessed Orb" "Jeweller's Orb" "Bestiary Orb" "Engineer's Orb" 
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 240 200 200 255
+		SetFontSize 40	
 	Hide
 		Class Currency
 		BaseType "Chromatic Orb" "Glassblower's Bauble" "Blacksmith's"
@@ -1910,7 +1910,7 @@
 		DisableDropSound True
 		PlayAlertSound 2 100
 		MinimapIcon 1 White Circle
-	Hide
+	Show
 		Class Currency
 		BaseType "Prophecy"
 		SetFontSize 38
@@ -2141,7 +2141,7 @@
 		SetFontSize 38
 		DisableDropSound True
 		MinimapIcon 1 Yellow Circle
-	Hide 
+	Show 
 		Class Currency
 		BaseType "Teal Oil" "Verdant Oil"
 		SetTextColor 0 0 0 255
@@ -2150,7 +2150,7 @@
 		SetFontSize 38
 		DisableDropSound True
 		MinimapIcon 1 White Circle
-	Hide
+	Show
 		Class Currency 
 		BaseType "Oil" 
 		SetTextColor 0 0 0 255
