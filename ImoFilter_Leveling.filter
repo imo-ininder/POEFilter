@@ -132,7 +132,7 @@
 		BaseType "Cluster Jewel"					
 		Rarity <= Rare
 		SetBorderColor 255 255 0 255
-		SetBackgroundColor 255 200 200 255
+		SetBackgroundColor 35 100 20 255
 		SetFontSize 42
 		PlayAlertSound 3 300                   
 		PlayEffect Blue
@@ -1652,12 +1652,12 @@
 	#	Rarity Rare
 	#	ItemLevel >= 65
 	#	SetFontSize 32
-	#Show
-	#	DropLevel >= 59
-	#	Class Wands
-	#	Rarity Rare
-	#	ItemLevel >= 65
-	#	SetFontSize 32
+	Show
+		DropLevel >= 59
+		Class Wands
+		Rarity Rare
+		ItemLevel >= 65
+		SetFontSize 32
 	#Show
 	#	Height = 4
 	#	DropLevel >= 58
@@ -1684,12 +1684,12 @@
 	#	Rarity Rare
 	#	ItemLevel >= 65
 	#	SetFontSize 32
-	#Show
-	#	DropLevel >= 55
-	#	Class "Sceptres"
-	#	Rarity Rare
-	#	ItemLevel >= 65
-	#	SetFontSize 32
+	Show
+		DropLevel >= 55
+		Class "Sceptres"
+		Rarity Rare
+		ItemLevel >= 65
+		SetFontSize 32
 	#Show
 	#	DropLevel >= 68
 	#	Class "Staves"
@@ -1708,26 +1708,26 @@
 	#	Rarity Rare
 	#	ItemLevel >= 65
 	#	SetFontSize 32
-	#Show
-	#	DropLevel >= 20
-	#	Class "Gloves" "Boots" "Helmets"
-	#	Rarity Rare
-	#	ItemLevel >= 65
-	#	SetFontSize 32
+	Show
+		DropLevel >= 20
+		Class "Gloves" "Boots" "Helmets"
+		Rarity Rare
+		ItemLevel >= 65
+		SetFontSize 32
 	#Show
 	#	DropLevel >= 55
 	#	Class "Body Armour"
 	#	Rarity Rare
 	#	ItemLevel >= 65
 	#	SetFontSize 32
-	#Show
-	#	Width <= 2
-	#	Height <= 2
-	#	DropLevel >= 58
-	#	Class "Shields"
-	#	Rarity Rare
-	#	ItemLevel >= 65
-	#	SetFontSize 32
+	Show
+		Width <= 2
+		Height <= 2
+		DropLevel >= 58
+		Class "Shields"
+		Rarity Rare
+		ItemLevel >= 65
+		SetFontSize 32
 	#Show
 	#	DropLevel > 62
 	#	Class "Shields"
@@ -2065,7 +2065,7 @@
 		SetTextColor 255 255 255 255 255       
 		SetBorderColor 0 0 0 255 255
 		SetBackgroundColor 0 84 128 255
-		SetFontSize 38
+		SetFontSize 40
 		PlayAlertSound 2 300
 	Show
 		Class Currency
@@ -2108,7 +2108,7 @@
 		SetBorderColor 0 0 0 255            
 		SetBackgroundColor 249 150 25 255   
 		PlayAlertSound 2 300
-		SetFontSize 38              
+		SetFontSize 40              
 		MinimapIcon 1 White Circle
 
 	#---------------------------------
@@ -2139,7 +2139,7 @@
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 190 0 255
-		SetFontSize 38
+		SetFontSize 40
 		DisableDropSound True
 		MinimapIcon 1 Yellow Circle
 	Show 
@@ -2148,7 +2148,7 @@
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 213 159 0 255
-		SetFontSize 38
+		SetFontSize 40
 		DisableDropSound True
 		MinimapIcon 1 White Circle
 	Show
@@ -2158,7 +2158,7 @@
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 240 200 200 255
 		DisableDropSound True
-		SetFontSize 36
+		SetFontSize 40
 
 	#---------------------------------
 	# Metamorph
@@ -2180,7 +2180,7 @@
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 125 0 255
 		PlayAlertSound 2 300
-		SetFontSize 38
+		SetFontSize 40
 		DisableDropSound True
 		MinimapIcon 1 White Circle
 
@@ -2214,21 +2214,21 @@
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 30 159 200 200
-		SetFontSize 38
+		SetFontSize 40
 	Show
 		Class Currency
 		BaseType "Muttering Essence of"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0 255             
 		SetBackgroundColor 30 159 200 175
-		SetFontSize 38    
+		SetFontSize 40    
 	Show
 		Class Currency
 		BaseType "Whispering Essence of"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0 255             
 		SetBackgroundColor 30 159 200 150
-		SetFontSize 36
+		SetFontSize 40
 
 #------------------------------------------------------------------------
 # [0021-5]Currency Recipe
@@ -3130,32 +3130,12 @@
 #------------------------------------------------------------------------
 # [L002-2] 4 Link Gears
 #------------------------------------------------------------------------
-	Show
-		LinkedSockets = 4
-		ItemLevel <= 65
-		Rarity <= Rare
-		Class "Gloves" "Boots" "Helmets" "Body Armour"
-		SocketGroup GGG
-		SetBorderColor 255 0 255 255
-		SetFontSize 42
-		PlayAlertSound 1 300
-		MinimapIcon 1 Blue Hexagon
-	Show
-		LinkedSockets = 4
-		ItemLevel <= 65
-		Rarity <= Magic
-		Class "Gloves" "Boots" "Helmets" "Body Armour"
-		SocketGroup GGB GGG
-		SetBorderColor 255 0 255 255
-		SetFontSize 36
-		PlayAlertSound 1 300
-		MinimapIcon 2 Blue Hexagon
 	#Show
 	#	LinkedSockets = 4
 	#	ItemLevel <= 65
 	#	Rarity <= Rare
 	#	Class "Gloves" "Boots" "Helmets" "Body Armour"
-	#	SocketGroup BBB
+	#	SocketGroup GGG
 	#	SetBorderColor 255 0 255 255
 	#	SetFontSize 42
 	#	PlayAlertSound 1 300
@@ -3165,152 +3145,100 @@
 	#	ItemLevel <= 65
 	#	Rarity <= Magic
 	#	Class "Gloves" "Boots" "Helmets" "Body Armour"
-	#	SocketGroup BBB BBG
+	#	SocketGroup GGB GGG
 	#	SetBorderColor 255 0 255 255
 	#	SetFontSize 36
 	#	PlayAlertSound 1 300
 	#	MinimapIcon 2 Blue Hexagon
+	Show
+		LinkedSockets = 4
+		ItemLevel <= 65
+		Rarity <= Rare
+		Class "Gloves" "Boots" "Helmets" "Body Armour"
+		SocketGroup BBG GGR
+		SetBorderColor 255 0 255 255
+		SetFontSize 42
+		PlayAlertSound 1 300
+		MinimapIcon 1 Blue Hexagon
+	Show
+		LinkedSockets = 4
+		ItemLevel <= 65
+		Rarity <= Magic
+		Class "Gloves" "Boots" "Helmets" "Body Armour"
+		SocketGroup BBG GGR
+		SetBorderColor 255 0 255 255
+		SetFontSize 36
+		PlayAlertSound 1 300
+		MinimapIcon 2 Blue Hexagon
 
 #------------------------------------------------------------------------
 # [L002-3] 3 Link Gears
 #------------------------------------------------------------------------
-	Show
-		LinkedSockets = 3
-		ItemLevel <= 65	
-		ItemLevel > 12
-		Rarity Rare
-		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
-		SocketGroup GGG
-		SetBorderColor 0 0 255 255
-		SetFontSize 38
-	Show
-		LinkedSockets = 3
-		ItemLevel <= 12
-		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
-		SocketGroup GGB GGG
-		SetBorderColor 0 0 255 255		
-		SetFontSize 40
-		PlayAlertSound 2 300
-		MinimapIcon 1 Blue Hexagon
 	#Show
 	#	LinkedSockets = 3
 	#	ItemLevel <= 65	
 	#	ItemLevel > 12
 	#	Rarity Rare
 	#	Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
-	#	SocketGroup BBB BBG #BGG GGG
+	#	SocketGroup GGG
 	#	SetBorderColor 0 0 255 255
 	#	SetFontSize 38
 	#Show
 	#	LinkedSockets = 3
 	#	ItemLevel <= 12
-	#	Class "Sceptres" "Wands" "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
-	#	SocketGroup BG
-	#	SetBorderColor 0 0 255 255
+	#	Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
+	#	SocketGroup GGB GGG
+	#	SetBorderColor 0 0 255 255		
 	#	SetFontSize 40
 	#	PlayAlertSound 2 300
 	#	MinimapIcon 1 Blue Hexagon
+	Show
+		LinkedSockets = 3
+		ItemLevel <= 65	
+		ItemLevel > 12
+		Rarity Rare
+		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
+		SocketGroup BBB BBG GGR
+		SetBorderColor 0 0 255 255
+		SetFontSize 38
+	Show
+		LinkedSockets = 3
+		ItemLevel <= 12
+		Class "Sceptres" "Wands" "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
+		SocketGroup BG BB
+		SetBorderColor 0 0 255 255
+		SetFontSize 40
+		PlayAlertSound 2 300
+		MinimapIcon 1 Blue Hexagon
 
 #------------------------------------------------------------------------
 # [L002-4] Attack Weapon (A1 - A9)
 #------------------------------------------------------------------------	
-	Show #A8 & A9
-		ItemLevel >= 55
-		ItemLevel < 65
-		Rarity Rare	
-		BaseType "Ranger Bow" "Steelwood Bow" "Thicket Bow" #"Gladius" "Vaal Greatsword" "Headman's Sword"  "Eye Gouger" "Throat Stabber" "Twin Claw" #"Gutting Knife" "Trisula" "Ambusher" "Dragon Mace" "Tenderizer" "Legion Hammer" "Pernarch" "Butcher Axe" "Siege Axe" "Engraved Hatchet" "Vaal Axe" "Corsair Sword" "Foul Staff" "Ezomyte Staff" "Maelström Staff"
-		SetBorderColor 200 200 0 255
-		SetBackgroundColor 35 100 20 255          
-		SetFontSize 42
-		PlayAlertSound 1 300
-		MinimapIcon 0 Green Hexagon
-	Show #A6 & A7
-		ItemLevel >= 44
-		ItemLevel < 55
-		Rarity Rare	
-		BaseType "Highborn Bow" "Decimation Bow" #"Phantom Mace" "Battle Hammer" "Wraith Axe" "Chest Splitter" "War Axe" "Labrys" "Graceful Sword" "Twilight Blade" "Wraith Sword" "Tiger Sword"  "Noble Claw" "Gut Ripper" "Military Staff" "Serpentine Staff"
-		SetBorderColor 200 200 0 255
-		SetBackgroundColor 35 100 20 255          
-		SetFontSize 42
-		PlayAlertSound 1 300
-		MinimapIcon 0 Green Hexagon
-	Show #A4 & A5
-		ItemLevel >= 34
-		ItemLevel < 44
-		Rarity Rare	
-		BaseType "Compound Bow" "Reflex Bow" "Grove Bow" #"Barbed Club" "Wyrm Mace" "Tomahawk" "Etched Hatchet" "Jasper Chopper" "Cutlass" "Variscite Blade" "Butcher Sword" "Gouger" "Double law" "Fright Claw" "Poignard" "Flaying Knife" "Prong Dagger"
-		SetBorderColor 200 200 0 255
-		SetBackgroundColor 35 100 20 255       
-		SetFontSize 42
-		PlayAlertSound 1 300
-		MinimapIcon 0 Green Hexagon
-	Show #A3
-		ItemLevel >= 24
-		ItemLevel < 34
-		Rarity Rare	
-		BaseType "Royal Bow" #"Sparkling Claw" "Vile Staff" Coiled Staff" "Dream Mace" "Bladed Mace" "Spectral Axe" "Arming Axe" "Shadow Axe" "Double Axe" "Elegant Sword" "Dusk Blade" "Spectral Sword"
-		SetBorderColor 200 200 0 255
-		SetBackgroundColor 35 100 20 255       
-		SetFontSize 42
-		PlayAlertSound 1 300
-		MinimapIcon 0 Green Hexagon
-	Show #A2 & A1 Rare
-		ItemLevel < 24
-		Rarity Rare	
-		Class "Bows" #"Two Hand" "One Hand" "Staves" "Claws" "Daggers"
-		SetBorderColor 200 200 0 255
-		SetBackgroundColor 35 100 20 255       
-		SetFontSize 42
-		PlayAlertSound 1 300
-		MinimapIcon 0 Green Hexagon
-	Show #A3 Magic		
-		ItemLevel >= 24
-		ItemLevel < 34
-		Rarity Magic	
-		BaseType "Royal Bow" #"Sparkling Claw" "Vile Staff" "Dream Mace" "Bladed Mace" "Spectral Axe" "Arming Axe" "Shadow Axe" "Double Axe" "Elegant Sword" "Dusk Blade" "Spectral Sword"
-		SetTextColor 25 95 235 255
-		SetBorderColor 255 170 0 255      
-		SetFontSize 38
-		PlayAlertSound 2 300
-		MinimapIcon 2 White Hexagon
-	Show #A2 Magic
-		ItemLevel < 24
-		ItemLevel >= 13
-		Rarity Magic	
-		BaseType "Bone Bow" "Composite Bow" #"War Hammer" "Broad Axe" "Broad Sword" "Blinder" "Cat's Paw" "Stiletto" "Iron Staff" "Coiled Staff"
-		SetTextColor 25 95 235 255
-		SetBorderColor 255 170 0 255      
-		SetFontSize 38
-		PlayAlertSound 2 300
-		MinimapIcon 2 White Hexagon
-	Show #A1 Magic
-		ItemLevel < 13
-		Rarity Magic	
-		BaseType "Short Bow" "Long Bow" #"Spiked Club" "Tribal Club" "Boarding Axe" "Jade Hatchet" "Sabre" "Copper Sword" "Sharktooth Claw" "Awl" #"Skinning Knife"
-		SetTextColor 25 95 235 255
-		SetBorderColor 255 170 0 255      
-		SetFontSize 38
-		PlayAlertSound 2 300
-		MinimapIcon 2 White Hexagon
-
-#------------------------------------------------------------------------
-# [L002-5] Rare Spell Weapon (A1 - A9)
-#------------------------------------------------------------------------
 	#Show #A8 & A9
-	#	ItemLevel >= 60
+	#	ItemLevel >= 55
 	#	ItemLevel < 65
 	#	Rarity Rare	
-	#	BaseType "Opal Sceptre" "Opal Wand" "Tornado Wand"
+	#	BaseType "Ranger Bow" "Steelwood Bow" "Thicket Bow" #"Gladius" "Vaal Greatsword" "Headman's Sword"  "Eye Gouger" "Throat Stabber" "Twin Claw" #"Gutting Knife" "Trisula" "Ambusher" "Dragon Mace" "Tenderizer" "Legion Hammer" "Pernarch" "Butcher Axe" "Siege Axe" "Engraved Hatchet" "Vaal Axe" "Corsair Sword" "Foul Staff" "Ezomyte Staff" "Maelström Staff"
+	#	SetBorderColor 200 200 0 255
+	#	SetBackgroundColor 35 100 20 255          
+	#	SetFontSize 42
+	#	PlayAlertSound 1 300
+	#	MinimapIcon 0 Green Hexagon
+	#Show #A6 & A7
+	#	ItemLevel >= 44
+	#	ItemLevel < 55
+	#	Rarity Rare	
+	#	BaseType "Highborn Bow" "Decimation Bow" #"Phantom Mace" "Battle Hammer" "Wraith Axe" "Chest Splitter" "War Axe" "Labrys" "Graceful Sword" "Twilight Blade" "Wraith Sword" "Tiger Sword"  "Noble Claw" "Gut Ripper" "Military Staff" "Serpentine Staff"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255          
 	#	SetFontSize 42
 	#	PlayAlertSound 1 300
 	#	MinimapIcon 0 Green Hexagon
 	#Show #A4 & A5
-	#	ItemLevel >= 41
-	#	ItemLevel < 60
+	#	ItemLevel >= 34
+	#	ItemLevel < 44
 	#	Rarity Rare	
-	#	BaseType "Crystal Sceptre"  "Abyssal Sceptre" "Imbued Wand" "Demon's Horn" "Omen Wand" "Serpent Wand" "Crystal Wand"
+	#	BaseType "Compound Bow" "Reflex Bow" "Grove Bow" #"Barbed Club" "Wyrm Mace" "Tomahawk" "Etched Hatchet" "Jasper Chopper" "Cutlass" "Variscite Blade" "Butcher Sword" "Gouger" "Double law" "Fright Claw" "Poignard" "Flaying Knife" "Prong Dagger"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255       
 	#	SetFontSize 42
@@ -3318,9 +3246,9 @@
 	#	MinimapIcon 0 Green Hexagon
 	#Show #A3
 	#	ItemLevel >= 24
-	#	ItemLevel < 41
+	#	ItemLevel < 34
 	#	Rarity Rare	
-	#	BaseType "Shadow Sceptre" "Quartz Sceptre" "Engraved Wand" "Faun's Horn" "Sage Wand" "Spiraled Wand" "Quartz Wand"
+	#	BaseType "Royal Bow" #"Sparkling Claw" "Vile Staff" Coiled Staff" "Dream Mace" "Bladed Mace" "Spectral Axe" "Arming Axe" "Shadow Axe" "Double Axe" "Elegant Sword" "Dusk Blade" "Spectral Sword"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255       
 	#	SetFontSize 42
@@ -3329,17 +3257,27 @@
 	#Show #A2 & A1 Rare
 	#	ItemLevel < 24
 	#	Rarity Rare	
-	#	Class "Sceptre" "Wand"
+	#	Class "Bows" #"Two Hand" "One Hand" "Staves" "Claws" "Daggers"
 	#	SetBorderColor 200 200 0 255
 	#	SetBackgroundColor 35 100 20 255       
 	#	SetFontSize 42
 	#	PlayAlertSound 1 300
 	#	MinimapIcon 0 Green Hexagon
+	#Show #A3 Magic		
+	#	ItemLevel >= 24
+	#	ItemLevel < 34
+	#	Rarity Magic	
+	#	BaseType "Royal Bow" #"Sparkling Claw" "Vile Staff" "Dream Mace" "Bladed Mace" "Spectral Axe" "Arming Axe" "Shadow Axe" "Double Axe" "Elegant Sword" "Dusk Blade" "Spectral Sword"
+	#	SetTextColor 25 95 235 255
+	#	SetBorderColor 255 170 0 255      
+	#	SetFontSize 38
+	#	PlayAlertSound 2 300
+	#	MinimapIcon 2 White Hexagon
 	#Show #A2 Magic
 	#	ItemLevel < 24
 	#	ItemLevel >= 13
 	#	Rarity Magic	
-	#	BaseType "Quartz Sceptre" "Quartz Wand"
+	#	BaseType "Bone Bow" "Composite Bow" #"War Hammer" "Broad Axe" "Broad Sword" "Blinder" "Cat's Paw" "Stiletto" "Iron Staff" "Coiled Staff"
 	#	SetTextColor 25 95 235 255
 	#	SetBorderColor 255 170 0 255      
 	#	SetFontSize 38
@@ -3348,7 +3286,7 @@
 	#Show #A1 Magic
 	#	ItemLevel < 13
 	#	Rarity Magic	
-	#	BaseType "Darkwood Sceptre" "Bronze Sceptre" "Carved Wand" "Goat's Horn"
+	#	BaseType "Short Bow" "Long Bow" #"Spiked Club" "Tribal Club" "Boarding Axe" "Jade Hatchet" "Sabre" "Copper Sword" "Sharktooth Claw" "Awl" #"Skinning Knife"
 	#	SetTextColor 25 95 235 255
 	#	SetBorderColor 255 170 0 255      
 	#	SetFontSize 38
@@ -3356,17 +3294,79 @@
 	#	MinimapIcon 2 White Hexagon
 
 #------------------------------------------------------------------------
+# [L002-5] Rare Spell Weapon (A1 - A9)
+#------------------------------------------------------------------------
+	Show #A8 & A9
+		ItemLevel >= 60
+		ItemLevel < 65
+		Rarity Rare	
+		BaseType  "Opal Wand" "Tornado Wand" #"Opal Sceptre"
+		SetBorderColor 200 200 0 255
+		SetBackgroundColor 35 100 20 255          
+		SetFontSize 42
+		PlayAlertSound 1 300
+		MinimapIcon 0 Green Hexagon
+	Show #A4 & A5
+		ItemLevel >= 41
+		ItemLevel < 60
+		Rarity Rare	
+		BaseType "Imbued Wand" "Demon's Horn" "Omen Wand" "Serpent Wand" "Crystal Wand" #"Crystal Sceptre"  "Abyssal Sceptre"
+		SetBorderColor 200 200 0 255
+		SetBackgroundColor 35 100 20 255       
+		SetFontSize 42
+		PlayAlertSound 1 300
+		MinimapIcon 0 Green Hexagon
+	Show #A3
+		ItemLevel >= 24
+		ItemLevel < 41
+		Rarity Rare	
+		BaseType  "Engraved Wand" "Faun's Horn" "Sage Wand" "Spiraled Wand" "Quartz Wand" #"Shadow Sceptre" "Quartz Sceptre"
+		SetBorderColor 200 200 0 255
+		SetBackgroundColor 35 100 20 255       
+		SetFontSize 42
+		PlayAlertSound 1 300
+		MinimapIcon 0 Green Hexagon
+	Show #A2 & A1 Rare
+		ItemLevel < 24
+		Rarity Rare	
+		Class "Wand" "Sceptre"
+		SetBorderColor 200 200 0 255
+		SetBackgroundColor 35 100 20 255       
+		SetFontSize 42
+		PlayAlertSound 1 300
+		MinimapIcon 0 Green Hexagon
+	Show #A2 Magic
+		ItemLevel < 24
+		ItemLevel >= 13
+		Rarity Magic	
+		BaseType "Quartz Sceptre" "Quartz Wand"
+		SetTextColor 25 95 235 255
+		SetBorderColor 255 170 0 255      
+		SetFontSize 38
+		PlayAlertSound 2 300
+		MinimapIcon 2 White Hexagon
+	Show #A1 Magic
+		ItemLevel < 13
+		Rarity Magic	
+		BaseType "Darkwood Sceptre" "Bronze Sceptre" "Carved Wand" "Goat's Horn"
+		SetTextColor 25 95 235 255
+		SetBorderColor 255 170 0 255      
+		SetFontSize 38
+		PlayAlertSound 2 300
+		MinimapIcon 2 White Hexagon
+
+#------------------------------------------------------------------------
 # [L002-6] Rare Weapon Catching Layer
 #------------------------------------------------------------------------
 	Show
 		ItemLevel < 65
 		Rarity Rare
-		Class "Bows"
+		Class  "Wand"
 		SetFontSize 35
 	#Show
 	#	ItemLevel < 65
 	#	Rarity Rare
-	#	Class "Wand" "Sceptres" "Rune Dagger" One Hand" "Claws" "Daggers" "Two Hand"  "Staves"
+	#	Class "Bows" "Sceptres" "Rune Dagger" One Hand" "Claws" "Daggers" "Two Hand"  "Staves"
 	#	SetFontSize 35
 
 #------------------------------------------------------------------------
@@ -3376,25 +3376,25 @@
 		ItemLevel >= 24
 		ItemLevel < 65
 		Rarity Rare 
-		BaseType "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Leather Belt" "Heavy Belt" "Rustic Sash" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Coral Ring" "Iron Ring" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Penetrating Arrow Quiver"
+		BaseType "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet" "Lapis Amulet" "Jade Amulet" "Amber Amulet" "Leather Belt" "Heavy Belt" "Rustic Sash" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Coral Ring" "Iron Ring" #"Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Penetrating Arrow Quiver"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
 		SetFontSize 42
 		PlayAlertSound 1 300
 		MinimapIcon 0 Green Hexagon
-	#Show # Specail for spell weapon craft.
-	#	ItemLevel < 65
-	#	Rarity Rare 
-	#	BaseType "Chain Belt"
-	#	SetBorderColor 200 200 0 255
-	#	SetBackgroundColor 35 100 20 255       
-	#	SetFontSize 42
-	#	PlayAlertSound 2 300
-	#	MinimapIcon 0 Green Hexagon
+	Show # Specail for spell weapon craft.
+		ItemLevel < 65
+		Rarity Rare 
+		BaseType "Chain Belt"
+		SetBorderColor 200 200 0 255
+		SetBackgroundColor 35 100 20 255       
+		SetFontSize 42
+		PlayAlertSound 2 300
+		MinimapIcon 0 Green Hexagon
 	Show
 		ItemLevel < 24
 		Rarity Rare 
-		Class "Amulet" "Belt" "Ring" "Quiver"
+		Class "Amulet" "Belt" "Ring" #"Quiver"
 		SetBorderColor 200 200 0 255
 		SetBackgroundColor 35 100 20 255       
 		SetFontSize 42
@@ -3403,7 +3403,7 @@
 	Show
 		ItemLevel < 24
 		Rarity Magic 
-		Class "Amulet" "Belt" "Ring" "Quiver"
+		Class "Amulet" "Belt" "Ring" #"Quiver"
 		SetTextColor 25 95 235 255
 		SetBorderColor 255 170 0 255      
 		SetFontSize 38
@@ -3456,13 +3456,13 @@
 	Show
 		ItemLevel <= 12
 		Rarity Normal
-		BaseType "Coral Ring" "Sapphire Ring" "Iron Ring" "Topaz Ring" "Leather Belt" "Heavy Belt" "Rustic Sash" "Quiver"
+		BaseType "Coral Ring" "Sapphire Ring" "Iron Ring" "Topaz Ring" "Leather Belt" "Heavy Belt" #"Rustic Sash" "Quiver"
 		SetTextColor 255 255 255 255
 		SetBorderColor 255 170 0 255
 		SetFontSize 36
 	Show
 		ItemLevel <= 8
-		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield" "Two Hand" "Bows" "One Hand" "Staves" "Claws" "Daggers" "Amulet" "Belt" "Ring" "Quiver"
+		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield" "Two Hand" "Bows" "One Hand" "Staves" "Claws" "Daggers" "Amulet" "Belt" "Ring" # "Quiver"
 		Rarity Normal		
 		SetBackgroundColor 0 0 0 200
 		SetFontSize 32

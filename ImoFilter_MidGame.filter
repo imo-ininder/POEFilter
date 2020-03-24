@@ -132,7 +132,7 @@
 		BaseType "Cluster Jewel"					
 		Rarity <= Rare
 		SetBorderColor 255 255 0 255
-		SetBackgroundColor 255 200 200 255
+		SetBackgroundColor 35 100 20 255
 		SetFontSize 42
 		PlayAlertSound 3 300                   
 		PlayEffect Blue
@@ -629,7 +629,7 @@
 		HasInfluence Elder
 		ItemLevel >= 86
 		Rarity <= Rare
-		BaseType "Ambusher" "Assassin's Garb" "Blood Sceptre" "Colossal Tower Shield" "Crystal Belt" "Gripped Gloves" "Heavy Belt" "Horned Sceptre" "Hubris Circlet" "Marble Amulet" "Sage's Robe" "Solar Maul" "Two-Toned Boots" "Vaal Regalia"
+		BaseType "Ambusher" "Assassin's Garb" "Blood Sceptre" "Colossal Tower Shield" "Crystal Belt" "Gripped Gloves" "Heavy Belt" "Horned Sceptre" "Hubris Circlet" "Marble Amulet" "Sage's Robe" "Solar Maul" "Two-Toned Boots" "Vaal Regalia" "Thicket Bow"
 		SetFontSize 45
 		SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 		SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -728,6 +728,7 @@
 
 	Show # %H5 $tier->rest $type->rare->influence
 		HasInfluence Elder Shaper
+		Class "Bow" "Gloves" "Boots" "Helmets" "Body Armour" "Two Hand Maces" "Two Hand Axes" "Two Hand Swords" "Staves" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Wand" "Shield" "Dagger" "Claw" "Amulet" "Ring"
 		Rarity <= Rare
 		SetFontSize 40
 		SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -1831,7 +1832,7 @@
 		BaseType "Orb of Transmutation" "Armourer's" "Orb of Augmentation"
 		SetTextColor 240 200 200 255
 		SetBorderColor 240 200 200 255
-		PlayAlertSound 2 300
+	#	PlayAlertSound 2 300
 		SetFontSize 38
 	Show
 		Class Currency
@@ -2064,7 +2065,7 @@
 		SetTextColor 255 255 255 255 255       
 		SetBorderColor 0 0 0 255 255
 		SetBackgroundColor 0 84 128 255
-		SetFontSize 38
+		SetFontSize 40
 		PlayAlertSound 2 300
 	Show
 		Class Currency
@@ -2072,7 +2073,7 @@
 		SetTextColor 255 255 255 255       
 		SetBorderColor 0 0 0 255 255
 		SetBackgroundColor 0 42 64 255         
-		SetFontSize 36
+		SetFontSize 40
 	Show 
 		Class Currency
 		BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Bloodstained Fossil"
@@ -2107,7 +2108,7 @@
 		SetBorderColor 0 0 0 255            
 		SetBackgroundColor 249 150 25 255   
 		PlayAlertSound 2 300
-		SetFontSize 38              
+		SetFontSize 40              
 		MinimapIcon 1 White Circle
 
 	#---------------------------------
@@ -2138,7 +2139,7 @@
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 190 0 255
-		SetFontSize 38
+		SetFontSize 40
 		DisableDropSound True
 		MinimapIcon 1 Yellow Circle
 	Show 
@@ -2147,7 +2148,7 @@
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 213 159 0 255
-		SetFontSize 38
+		SetFontSize 40
 		DisableDropSound True
 		MinimapIcon 1 White Circle
 	Show
@@ -2157,7 +2158,7 @@
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 240 200 200 255
 		DisableDropSound True
-		SetFontSize 36
+		SetFontSize 40
 
 	#---------------------------------
 	# Metamorph
@@ -2179,7 +2180,7 @@
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 125 0 255
 		PlayAlertSound 2 300
-		SetFontSize 38
+		SetFontSize 40
 		DisableDropSound True
 		MinimapIcon 1 White Circle
 

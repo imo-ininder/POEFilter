@@ -132,7 +132,7 @@
 		BaseType "Cluster Jewel"					
 		Rarity <= Rare
 		SetBorderColor 255 255 0 255
-		SetBackgroundColor 255 200 200 255
+		SetBackgroundColor 35 100 20 255
 		SetFontSize 42
 		PlayAlertSound 3 300                   
 		PlayEffect Blue
@@ -728,6 +728,7 @@
 
 	Show # %H5 $tier->rest $type->rare->influence
 		HasInfluence Elder Shaper
+		Class "Bow" "Gloves" "Boots" "Helmets" "Body Armour" "Two Hand Maces" "Two Hand Axes" "Two Hand Swords" "Staves" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Wand" "Shield" "Dagger" "Claw" "Amulet" "Ring"
 		Rarity <= Rare
 		SetFontSize 40
 		SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
