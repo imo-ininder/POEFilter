@@ -728,7 +728,7 @@
 
 	Show # %H5 $tier->rest $type->rare->influence
 		HasInfluence Elder Shaper
-		Class "Bow" "Gloves" "Boots" "Helmets" "Body Armour" "Two Hand Maces" "Two Hand Axes" "Two Hand Swords" "Staves" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Wand" "Shield" "Dagger" "Claw" "Amulet" "Ring"
+		Class "Bow" "Gloves" "Boots" "Helmets" "Body Armour" "Two Hand Maces" "Two Hand Axes" "Two Hand Swords" "Staves" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Wand" "Shield" "Dagger" "Claw" "Amulet" "Ring" "Sceptres"
 		Rarity <= Rare
 		SetFontSize 40
 		SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -1269,7 +1269,14 @@
 		SetBorderColor 255 125 0 255
 		SetBackgroundColor 86 50 50 255
 		SetFontSize 38
+		Show 
+		ItemLevel >= 84
+		Rarity <= Rare
+		BaseType "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring" "Two-Toned Boots" 
+		SetBorderColor 255 125 0 255
+		SetFontSize 38
 	Show 
+		ItemLevel < 84
 		Rarity <= Rare
 		BaseType "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring" "Two-Toned Boots" 
 		SetBorderColor 255 125 0 255
@@ -1797,7 +1804,7 @@
 		MinimapIcon 1 Yellow Circle
 	Show 
 		Class Currency
-		BaseType  "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Prime Sextant"  "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" 
+		BaseType "Orb of Alteration" "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Orb of Binding" "Cartographer's Chisel" "Prime Sextant"  "Orb of Horizons" "Stacked Deck" "Imprinted Bestiary Orb" 
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 213 159 0 255
@@ -1806,14 +1813,14 @@
 		MinimapIcon 1 White Circle
 	Show
 		Class Currency 
-		BaseType  "Blessed Orb" "Jeweller's Orb" "Bestiary Orb" "Engineer's Orb" "Simple Sextant"
+		BaseType  "Blessed Orb" "Bestiary Orb" "Engineer's Orb"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 240 200 200 255
 		SetFontSize 40
 	Show
 		Class Currency
-		BaseType "Orb of Chance" "Orb of Alteration" 
+		BaseType "Orb of Chance" "Simple Sextant" "Jeweller's Orb"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 240 200 200 255
