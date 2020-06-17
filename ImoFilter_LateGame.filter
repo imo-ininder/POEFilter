@@ -101,42 +101,6 @@
 #========================================================================================================================================================
 # [0000] Special Block for New League Content
 #========================================================================================================================================================
-	Show 
-		Class Currency
-		BaseType "Delirium Orb"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 190 0 255
-		SetFontSize 42
-		PlayAlertSound 2 300
-		MinimapIcon 1 Yellow Circle
-	Show 
-		Class Currency
-		BaseType "Simulacrum Splinter" 
-		SetTextColor 255 235 235 255         
-		SetBorderColor 130 25 255 255        
-		SetBackgroundColor 65 20 80
-		SetFontSize 40
-		PlayAlertSound 2 300
-		MinimapIcon 1 White Circle
-	Show 
-		Class "Map Fragments"
-		BaseType "Simulacrum"
-		SetTextColor 0 0 0 255               
-		SetBorderColor 0 0 0 255             
-		SetBackgroundColor 255 255 255 255
-		SetFontSize 42   
-		PlayAlertSound 2 300
-	Show
-		Class Jewel		
-		BaseType "Cluster Jewel"					
-		Rarity <= Rare
-		SetBorderColor 255 255 0 255
-		SetBackgroundColor 35 100 20 255
-		SetFontSize 42
-		PlayAlertSound 3 300                   
-		PlayEffect Blue
-		MinimapIcon 2 Blue Diamond	
 
 #========================================================================================================================================================
 # [0001] 6-Linked
@@ -629,7 +593,7 @@
 		HasInfluence Elder
 		ItemLevel >= 86
 		Rarity <= Rare
-		BaseType "Ambusher" "Assassin's Garb" "Blood Sceptre" "Colossal Tower Shield" "Crystal Belt" "Gripped Gloves" "Heavy Belt" "Horned Sceptre" "Hubris Circlet" "Marble Amulet" "Sage's Robe" "Solar Maul" "Two-Toned Boots" "Vaal Regalia"
+		BaseType "Ambusher" "Assassin's Garb" "Blood Sceptre" "Colossal Tower Shield" "Crystal Belt" "Gripped Gloves" "Heavy Belt" "Horned Sceptre" "Hubris Circlet" "Marble Amulet" "Sage's Robe" "Solar Maul" "Two-Toned Boots" "Vaal Regalia" "Thicket Bow"
 		SetFontSize 45
 		SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 		SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -1579,6 +1543,16 @@
 # [0017-5] Jewel
 #------------------------------------------------------------------------
 	Show
+		Class Jewel		
+		BaseType "Cluster Jewel"			
+		Rarity <= Rare
+		SetBorderColor 255 255 0 255
+		SetBackgroundColor 35 100 20 255
+		SetFontSize 42
+		PlayAlertSound 3 300                   
+		PlayEffect Blue
+		MinimapIcon 2 Blue Diamond	
+	Show
 		Rarity = Rare
 		Class Jewel		
 		SetBorderColor 255 255 0 255
@@ -1928,14 +1902,7 @@
 
 	#---------------------------------
 	# Legion
-	#---------------------------------
-	Show "Currency"
-		BaseType "Emblem"
-		SetTextColor 100 0 122 255           
-		SetBorderColor 100 0 255 255         
-		SetBackgroundColor 255 255 255 255
-		SetFontSize 42		
-		PlayAlertSound 1 200	
+	#---------------------------------	
 	Show
 		Class "Currency"
 		BaseType "Timeless Maraketh" "Timeless Templar"
@@ -1944,6 +1911,28 @@
 		SetBackgroundColor 173 51 214
 		SetFontSize 40		
 		PlayAlertSound 2 100
+		MinimapIcon 1 White Circle
+
+	#---------------------------------
+	# Delerium
+	#---------------------------------
+	Show 
+		Class Currency
+		BaseType "Delirium Orb"
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 255 190 0 255
+		SetFontSize 42
+		PlayAlertSound 2 300
+		MinimapIcon 1 Yellow Circle	
+	Show 
+		Class Currency
+		BaseType "Simulacrum" 
+		SetTextColor 255 235 235 255         
+		SetBorderColor 130 25 255 255        
+		SetBackgroundColor 65 20 80
+		SetFontSize 40
+		PlayAlertSound 2 300
 		MinimapIcon 1 White Circle
 
 	#---------------------------------
@@ -2727,9 +2716,17 @@
 		Class "Map Fragment"
 		BaseType "Rusted"
 		SetTextColor 200 0 200 255
-		SetBorderColor 200 0 200 255
+		SetBorderColor 200 0 200 255		
+		SetFontSize 40
 		PlayAlertSound 2 300
-		SetFontSize 40        
+	Show 
+		Class "Map Fragments"
+		BaseType "Maraketh Emblem" "Simulacrum" "Chayula" "Pure"
+		SetTextColor 100 0 122 255           
+		SetBorderColor 100 0 255 255         
+		SetBackgroundColor 255 255 255 255
+		SetFontSize 42		
+		PlayAlertSound 1 200		      
 	Show 
 		Class "Map Fragments"
 		SetTextColor 0 0 0 255               

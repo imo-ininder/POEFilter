@@ -101,42 +101,6 @@
 #========================================================================================================================================================
 # [0000] Special Block for New League Content
 #========================================================================================================================================================
-	Show 
-		Class Currency
-		BaseType "Delirium Orb"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 255 190 0 255
-		SetFontSize 42
-		PlayAlertSound 2 300
-		MinimapIcon 1 Yellow Circle
-	Show 
-		Class Currency
-		BaseType "Simulacrum Splinter" 
-		SetTextColor 255 235 235 255         
-		SetBorderColor 130 25 255 255        
-		SetBackgroundColor 65 20 80
-		SetFontSize 40
-		PlayAlertSound 2 300
-		MinimapIcon 1 White Circle
-	Show 
-		Class "Map Fragments"
-		BaseType "Simulacrum"
-		SetTextColor 0 0 0 255               
-		SetBorderColor 0 0 0 255             
-		SetBackgroundColor 255 255 255 255
-		SetFontSize 42   
-		PlayAlertSound 2 300
-	Show
-		Class Jewel		
-		BaseType "Cluster Jewel"					
-		Rarity <= Rare
-		SetBorderColor 255 255 0 255
-		SetBackgroundColor 35 100 20 255
-		SetFontSize 42
-		PlayAlertSound 3 300                   
-		PlayEffect Blue
-		MinimapIcon 2 Blue Diamond	
 
 #========================================================================================================================================================
 # [0001] 6-Linked
@@ -1579,6 +1543,16 @@
 # [0017-5] Jewel
 #------------------------------------------------------------------------
 	Show
+		Class Jewel		
+		BaseType "Cluster Jewel"			
+		Rarity <= Rare
+		SetBorderColor 255 255 0 255
+		SetBackgroundColor 35 100 20 255
+		SetFontSize 42
+		PlayAlertSound 3 300                   
+		PlayEffect Blue
+		MinimapIcon 2 Blue Diamond	
+	Show
 		Rarity = Rare
 		Class Jewel		
 		SetBorderColor 255 255 0 255
@@ -1929,13 +1903,6 @@
 	#---------------------------------
 	# Legion
 	#---------------------------------
-	Show "Currency"
-		BaseType "Emblem"
-		SetTextColor 100 0 122 255           
-		SetBorderColor 100 0 255 255         
-		SetBackgroundColor 255 255 255 255
-		SetFontSize 42		
-		PlayAlertSound 1 200	
 	Show
 		Class "Currency"
 		BaseType "Timeless Maraketh" "Timeless Templar"
@@ -1944,6 +1911,28 @@
 		SetBackgroundColor 173 51 214
 		SetFontSize 40		
 		PlayAlertSound 2 100
+		MinimapIcon 1 White Circle
+
+	#---------------------------------
+	# Delerium
+	#---------------------------------
+	Show 
+		Class Currency
+		BaseType "Delirium Orb"
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 255 190 0 255
+		SetFontSize 42
+		PlayAlertSound 2 300
+		MinimapIcon 1 Yellow Circle	
+	Show 
+		Class Currency
+		BaseType "Simulacrum" 
+		SetTextColor 255 235 235 255         
+		SetBorderColor 130 25 255 255        
+		SetBackgroundColor 65 20 80
+		SetFontSize 40
+		PlayAlertSound 2 300
 		MinimapIcon 1 White Circle
 
 	#---------------------------------
@@ -2323,7 +2312,7 @@
 #========================================================================================================================================================
 	Show #Divination-Exception
 		Class Divination
-		BaseType "The Wolf's Shadow" "The Master Artisan"
+		BaseType "The Wolf's Shadow" "The Master Artisan" "The Demoness"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 100 150 255         
 		SetBackgroundColor 145 215 230 225
@@ -2334,7 +2323,7 @@
 	#------------------------------------------------------------------------
 	Show 
 		Class Divination
-		BaseType "Abandoned Wealth" "Alluring Bounty" "Baited Expectations" "Beauty Through Death" "Divine Justice" "Etched in Blood" "House of Mirrors" "Immortal Resolve" "Mawr Blaidd" "Nook's Crown" "Pride Before the Fall" "Pride of the First Ones" "Seven Years Bad Luck" "Succor of the Sinless" "The Bargain" "The Celestial Stone" "The Cheater" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Eye of Terror" "The Fiend" "The Fishmonger" "The Immortal" "The Iron Bard" "The King's Heart" "The Life Thief" "The Nurse" "The Price of Loyalty" "The Progeny of Lunaris" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Strategist" "The Undisputed" "The Vast" "The Wolven King's Bite" "Void of the Elements" "Wealth and Power"
+		BaseType "Abandoned Wealth" "Alluring Bounty" "Baited Expectations" "Beauty Through Death" "Divine Justice" "Etched in Blood" "House of Mirrors" "Immortal Resolve" "Mawr Blaidd" "Nook's Crown" "Pride Before the Fall" "Pride of the First Ones" "Seven Years Bad Luck" "Succor of the Sinless" "The Bargain" "The Betrayal" "The Celestial Stone" "The Cheater" "The Damned" "The Demon" "The Doctor" "The Dragon's Heart" "The Eye of Terror" "The Fiend" "The Fishmonger" "The Immortal" "The Iron Bard" "The King's Heart" "The Life Thief" "The Nurse" "The Price of Loyalty" "The Progeny of Lunaris" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Spark and the Flame" "The Strategist" "The Undisputed" "The Vast" "The Wolven King's Bite" "The World Eater" "Void of the Elements" "Wealth and Power"
 		SetTextColor 0 0 255 255             
 		SetBorderColor 0 0 255 255           
 		SetBackgroundColor 255 255 255 255
@@ -2347,7 +2336,7 @@
 	#------------------------------------------------------------------------
 	Show 
 		Class Divination
-		BaseType "Azyran's Reward" "Burning Blood" "Chaotic Disposition" "Dark Dreams" "Hunter's Reward" "Perfection" "Squandered Prosperity" "The Artist" "The Cartographer" "The Eldritch Decay" "The Enlightened" "The Escape" "The Gladiator" "The Hale Heart" "The Hoarder" "The Landing" "The Mayor" "The Offering" "The Old Man" "The Professor" "The Risk" "The Sephirot" "The Void" 
+		BaseType "Azyran's Reward" "Blessing of God" "Burning Blood" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Hunter's Reward" "Perfection" "Squandered Prosperity" "The Artist" "The Cartographer" "The Eldritch Decay" "The Enlightened" "The Escape" "The Gladiator" "The Hale Heart" "The Hoarder" "The Landing" "The Lord of Celebration" "The Mayor" "The Offering" "The Old Man" "The Professor" "The Risk" "The Sephirot" "The Void"
 		SetTextColor 0 0 0 255               
 		SetBorderColor 255 255 0 255         
 		SetBackgroundColor 100 250 250 245
@@ -2360,7 +2349,7 @@
 	#------------------------------------------------------------------------
 	Show 
 		Class Divination
-		BaseType "A Dab of Ink" "Akil's Prophecy" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Council of Cats" "Deathly Designs" "Earth Drinker" "Emperor of Purity" "Friendship" "Heterochromia" "Humility" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Monochrome" "No Traces" "Sambodhi's Vow" "The Beast" "The Breach" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Dark Mage" "The Deep Ones" "The Dreamer" "The Encroaching Darkness" "The Endless Darkness" "The Ethereal" "The Formless Sea" "The Hunger" "The Innocent" "The Inventor" "The Jeweller's Boon" "The Journey" "The Last One Standing" "The Master" "The Polymath" "The Porcupine" "The Primordial" "The Sacrifice" "The Scavenger" "The Seeker" "The Side Quest" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Undaunted" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The World Eater" "The Wretched" "Time-Lost Relic" "Underground Forest" "Vanity"
+		BaseType "A Dab of Ink" "Akil's Prophecy" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Deathly Designs" "Earth Drinker" "Emperor of Purity" "Friendship" "Heterochromia" "Humility" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Monochrome" "No Traces" "Sambodhi's Vow" "The Beast" "The Breach" "The Celestial Justicar" "The Chains that Bind" "The Chosen" "The Dapper Prodigy" "The Dark Mage" "The Deep Ones" "The Dreamer" "The Encroaching Darkness" "The Endless Darkness" "The Ethereal" "The Formless Sea" "The Hunger" "The Innocent" "The Inventor" "The Jeweller's Boon" "The Journey" "The Last One Standing" "The Master" "The Polymath" "The Porcupine" "The Primordial" "The Sacrifice" "The Scavenger" "The Seeker" "The Side Quest" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Undaunted" "The Valkyrie" "The Valley of Steel Boxes" "The Warlord" "The Wilted Rose" "The Wolf" "The Wretched" "Time-Lost Relic" "Underground Forest" "Vanity"
 		SetTextColor 0 0 0 255              
 		SetBorderColor 0 0 255 255          
 		SetBackgroundColor 50 220 240 235
@@ -2373,7 +2362,7 @@
 	#------------------------------------------------------------------------
 	Hide 
 		Class Divination
-		BaseType "The Craving" "A Mother's Parting Gift" "Anarchy's Price" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Grave Knowledge" "Lantador's Lost Love" "Might is Right" "Rain of Chaos" "Rats" "Shard of Fate" "Struck by Lightning" "The Archmage's Right Hand" "The Army of Blood" "The Carrion Crow" "The Endurance" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Opulent" "The Rabid Rhoa" "The Scarred Meadow" "The Sigil" "The Skeleton" "The Summoner" "The Surgeon" "The Sword King's Salute" "The Warden" "The Watcher" "The Witch" "Thirst for Knowledge" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Volatile Power"
+		BaseType "A Mother's Parting Gift" "Anarchy's Price" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Grave Knowledge" "Lantador's Lost Love" "Might is Right" "Rain of Chaos" "Rats" "Shard of Fate" "Struck by Lightning" "The Archmage's Right Hand" "The Army of Blood" "The Carrion Crow" "The Craving" "The Endurance" "The Hermit" "The Incantation" "The King's Blade" "The Lich" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Opulent" "The Rabid Rhoa" "The Scarred Meadow" "The Sigil" "The Skeleton" "The Summoner" "The Surgeon" "The Sword King's Salute" "The Warden" "The Watcher" "The Witch" "Thirst for Knowledge" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Volatile Power" 
 		SetTextColor 0 0 0 255               
 		SetBorderColor 0 0 0                 
 		SetBackgroundColor 175 215 230 180 
@@ -2728,8 +2717,16 @@
 		BaseType "Rusted"
 		SetTextColor 200 0 200 255
 		SetBorderColor 200 0 200 255
+		SetFontSize 40  
 		PlayAlertSound 2 300
-		SetFontSize 40        
+	Show 
+		Class "Map Fragments"
+		BaseType "Maraketh Emblem" "Simulacrum" "Chayula" "Pure"
+		SetTextColor 100 0 122 255           
+		SetBorderColor 100 0 255 255         
+		SetBackgroundColor 255 255 255 255
+		SetFontSize 42		
+		PlayAlertSound 1 200		      
 	Show 
 		Class "Map Fragments"
 		SetTextColor 0 0 0 255               
