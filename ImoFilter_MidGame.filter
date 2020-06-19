@@ -137,10 +137,13 @@
 	Show 
 		Class Currency
 		BaseType  "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 213 159 0 255
-		SetFontSize 40
+		SetTextColor 255 255 255 255  
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 255 125 0 255
+		PlayAlertSound 1 300
+		SetFontSize 42       
+		DisableDropSound True
+		MinimapIcon 1 Red Circle
 	Show 
 		Class HarvestInfrastructure
 		SetTextColor 255 255 255 255 # Kubernates Color set

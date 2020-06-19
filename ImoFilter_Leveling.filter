@@ -137,10 +137,13 @@
 	Show 
 		Class Currency
 		BaseType  "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
-		SetTextColor 0 0 0 255
-		SetBorderColor 0 0 0 255
-		SetBackgroundColor 213 159 0 255
-		SetFontSize 40
+		SetTextColor 255 255 255 255  
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 255 125 0 255
+		PlayAlertSound 1 300
+		SetFontSize 42       
+		DisableDropSound True
+		MinimapIcon 1 Red Circle
 	Show 
 		Class HarvestInfrastructure
 		SetTextColor 255 255 255 255 # Kubernates Color set
@@ -3213,9 +3216,18 @@
 	Show
 		LinkedSockets = 4
 		ItemLevel <= 65
+		Class "Gloves" "Boots" "Helmets" "Body Armour"
+		SocketGroup BBBB
+		SetBorderColor 255 0 255 255
+		SetFontSize 42
+		PlayAlertSound 1 300
+		MinimapIcon 0 Blue Hexagon
+	Show
+		LinkedSockets = 4
+		ItemLevel <= 65
 		Rarity <= Rare
 		Class "Gloves" "Boots" "Helmets" "Body Armour"
-		SocketGroup BBG GGR
+		SocketGroup BBB
 		SetBorderColor 255 0 255 255
 		SetFontSize 42
 		PlayAlertSound 1 300
@@ -3225,11 +3237,11 @@
 		ItemLevel <= 65
 		Rarity <= Magic
 		Class "Gloves" "Boots" "Helmets" "Body Armour"
-		SocketGroup BBG GGR
+		SocketGroup BBB
 		SetBorderColor 255 0 255 255
 		SetFontSize 36
 		PlayAlertSound 1 300
-		MinimapIcon 2 Blue Hexagon
+		MinimapIcon 2 Blue Hexagon	
 
 #------------------------------------------------------------------------
 # [L002-3] 3 Link Gears
@@ -3258,7 +3270,7 @@
 		ItemLevel > 12
 		Rarity Rare
 		Class "Gloves" "Boots" "Helmets" "Body Armour" "Shield"
-		SocketGroup BBB BBG GGR
+		SocketGroup BBB BBG #GGR
 		SetBorderColor 0 0 255 255
 		SetFontSize 38
 	Show
