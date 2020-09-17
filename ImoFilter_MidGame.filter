@@ -118,7 +118,7 @@
 		PlayAlertSound 1 200
 		MinimapIcon 1 Red Circle
 	Show
-		BaseType "Seed"
+		BaseType "Grain"
 		SetTextColor 0 0 0 255  		
 		SetBorderColor 100 200 0 255 	
 		SetBackgroundColor 75 150 0 255 
@@ -126,7 +126,7 @@
 		PlayAlertSound 2 300
 		MinimapIcon 1 Yellow Circle
 	Show
-		BaseType "Grain"
+		BaseType "Seed"
 		SetTextColor 0 0 0 255  		
 		SetBorderColor 75 150 0 255 	
 		SetBackgroundColor 50 100 0 255 
@@ -144,12 +144,6 @@
 		SetFontSize 42       
 		DisableDropSound True
 		MinimapIcon 1 Red Circle
-	Show 
-		Class HarvestInfrastructure
-		SetTextColor 255 255 255 255 # Kubernates Color set
-		SetBorderColor 50 109 230 255 # Kubernates Color set
-		SetBackgroundColor 50 109 230 255 # Kubernates Color set
-		SetFontSize 40
 
 #========================================================================================================================================================
 # [0001] 6-Linked
@@ -2170,7 +2164,7 @@
 		MinimapIcon 0 Red Circle
 	Show
 		Class Currency
-		BaseType "Opalescent Oil" "Black Oil" "Indigo Oil"
+		BaseType "Opalescent Oil" "Black Oil"
 		SetTextColor 255 255 255 255  
 		SetBorderColor 255 255 255 255
 		SetBackgroundColor 255 125 0 255
@@ -2180,7 +2174,7 @@
 		MinimapIcon 1 Red Circle
 	Show
 		Class Currency
-		BaseType "Crimson Oil" "Violet Oil" "Azure Oil"
+		BaseType "Crimson Oil" "Violet Oil" "Azure Oil" "Indigo Oil"
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 255 190 0 255
@@ -2765,7 +2759,7 @@
 		Class "Map Fragment"
 		BaseType "Polished"
 		SetTextColor 159 15 213 255
-		SetBorderColor 0 0 0 255
+		SetBorderColor 159 15 213 255
 		SetBackgroundColor 0 0 0 255
 		SetFontSize 40
 		PlayAlertSound 2 300
@@ -2774,7 +2768,7 @@
 		Class "Map Fragment"
 		BaseType "Rusted"
 		SetTextColor 200 0 200 255
-		SetBorderColor 200 0 200 255		
+		SetBorderColor 0 0 0 255		
 		SetFontSize 40
 		PlayAlertSound 2 300		
 	Show 
